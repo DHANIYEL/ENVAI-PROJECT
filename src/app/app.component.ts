@@ -6,6 +6,8 @@ import { BannerSectionComponent } from './pages/home/banner-section/banner-secti
 import { Section2Component } from './pages/home/section-2/section-2.component';
 import { Section3Component } from './pages/home/section-3/section-3.component';
 import { Section4Component } from './pages/home/section-4/section-4.component';
+import { Section5Component } from './pages/home/section-5/section-5.component';
+import { Section6Component } from './pages/home/section-6/section-6.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +19,9 @@ import { Section4Component } from './pages/home/section-4/section-4.component';
     BannerSectionComponent,
     Section2Component,
     Section3Component,
-    Section4Component
+    Section4Component,
+    Section5Component,
+    Section6Component
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']  // Corrected property name to 'styleUrls'

@@ -9,6 +9,9 @@ import { NgIf } from '@angular/common'; // Import NgIf for *ngIf
   imports: [NgIf], // Add NgIf to the imports array
 })
 export class HeaderComponent {
+
+  navLogo = 'assets/logo/LOGO-WHITE.png';
+
   isMenuOpen = false;
 
   toggleMenu(): void {
