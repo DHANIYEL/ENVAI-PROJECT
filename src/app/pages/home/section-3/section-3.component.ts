@@ -18,4 +18,7 @@ export class Section3Component {
 
   heroLeftSvg = 'assets/svg/hero-left.svg';
   heroRightSvg = 'assets/svg/hero-right.svg';
+
+  joinEnvaiImg = 'assets/home/join-envai-img.png'
+
 }
