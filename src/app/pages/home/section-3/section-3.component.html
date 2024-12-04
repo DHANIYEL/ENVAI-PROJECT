@@ -1,0 +1,110 @@
+<section class="max-w-6xl mx-auto px-4 py-16 relative">
+  <!-- Floating Squares -->
+  <div class="absolute right-20 transform translate-x-1/2 -translate-y-28 -z-10">
+    <img [src]="heroRightSvg" alt="Decorative Right SVG" class="w-auto h-auto" />
+  </div>
+
+  <div class="absolute left-32 transform -translate-x-3/4 translate-y-0 max-md:hidden">
+    <img [src]="heroLeftSvg" alt="Decorative Left SVG" class="w-auto h-auto" />
+  </div>
+  <!-- Header -->
+  <div class="flex justify-center items-center mb-12">
+    <div
+      class="flex items-center px-4 py-2 rounded-full shadow-2xl my-10 bg-[#F0F0F0]"
+    >
+      <img [src]="processIcon" alt="process Icon" class="w-5 h-5 mr-2" />
+      <p class="text-gray-800">Process</p>
+    </div>
+  </div>
+  <div class="text-center mb-12 relative">
+    <h1 class="text-4xl font-bold mb-6">How does it work?</h1>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      We understand that investing can feel daunting, but we're here to help you
+      confidently engage in short-term, secure, and rewarding asset-backed real
+      estate projects. Our real-time insights reporting is designed with your
+      unique needs in mind, ensuring you feel informed and supported at every
+      step.
+    </p>
+  </div>
+  <!-- Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Card 1 -->
+    <div class="bg-violet-200 p-8 rounded-xl flex flex-col justify-center items-start w-full h-full">
+      <div class="flex flex-col items-start gap-4 ">
+        <div
+          class="w-12 h-12 bg-violet-300 rounded-full flex items-center justify-center text-violet-700 font-semibold"
+        >
+        <img [src]="analyticsIcon" alt="analytic icons" />
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">What do I invest in?</h3>
+          <p class="text-gray-700">
+            Invest on a journey of growth by investing in one or more real estate
+            projects that adhere to strict of all legal and structural
+            regulations. Construction of the selected property is already
+            underway, having completed at least 20% and up to 75% of
+            construction.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-red-200 p-8 rounded-xl flex flex-col justify-center items-start w-full h-full">
+      <div class="flex flex-col items-start gap-4 ">
+        <div
+          class="w-12 h-12 bg-red-300 rounded-full flex items-center justify-center text-red-700 font-semibold"
+        >
+          <img [src]="defenceIcon" alt="defence icons" />
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">What security do I get?</h3>
+          <p class="text-gray-700">
+            Rest assured, your investments are backed by 100% security through
+            the very real estate and development project you're investing in
+            during development.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-violet-200 p-8 rounded-xl flex flex-col justify-center items-start w-full h-full">
+      <div class="flex flex-col items-start gap-4 ">
+        <div
+          class="w-12 h-12 bg-violet-300 rounded-full flex items-center justify-center text-violet-700 font-semibold"
+        >
+        <img [src]="timeIcon" alt="time icons" />
+
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Duration of the investment</h3>
+          <p class="text-gray-700">
+            Experience the flexibility of investing for a minimum of 12 months
+            and up to a maximum of 36 months.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-green-200 p-8 rounded-xl flex flex-col justify-center items-start w-full h-full">
+      <div class="flex flex-col items-start gap-4 ">
+        <div
+          class="w-12 h-12 bg-green-300 rounded-full flex items-center justify-center text-green-700 font-semibold"
+        >
+        <img [src]="smileIcon" alt="smile icons" />
+
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Profit sharing</h3>
+          <p class="text-gray-700">
+            Reap the rewards with a promising return of 15% per annum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
