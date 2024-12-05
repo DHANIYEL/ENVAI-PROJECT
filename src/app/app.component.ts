@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
-import { HomeComponent } from './pages/home/home.component';
-import { PagesComponent } from "./pages/pages.component";
+import { AboutComponent } from "./pages/about/about.component";
+import { NewsletterComponent } from "./common/newsletter/newsletter.component";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,8 @@ import { PagesComponent } from "./pages/pages.component";
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
+    AboutComponent,
+    NewsletterComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']  // Corrected property name to 'styleUrls'

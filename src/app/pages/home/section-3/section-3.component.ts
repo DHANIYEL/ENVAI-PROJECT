@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { JoinSectionComponent } from "../../../common/join-section/join-section.component";
 
 @Component({
   selector: 'app-section-3',
   standalone: true,
-  imports: [],
+  imports: [JoinSectionComponent],
   templateUrl: './section-3.component.html',
   styleUrl: './section-3.component.css'
 })
@@ -19,6 +20,5 @@ export class Section3Component {
   heroLeftSvg = 'assets/svg/hero-left.svg';
   heroRightSvg = 'assets/svg/hero-right.svg';
 
-  joinEnvaiImg = 'assets/home/join-envai-img.png'
 
 }
