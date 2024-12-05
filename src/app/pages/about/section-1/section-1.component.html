@@ -1,6 +1,9 @@
-<div class="max-w-7xl mx-auto">
+<div class="max-w-7xl mx-auto max-md:px-4">
+  <div class="absolute left-32 transform -translate-x-20 translate-y-72 max-md:hidden">
+    <img [src]="patternLeftSvg" alt="Decorative Left SVG" class="w-auto h-auto" />
+  </div>
   <!-- Hero Section -->
-  <div class="relative h-[400px] w-full z-20">
+  <div class="relative h-[400px] w-full ">
     <div class="absolute inset-0">
       <img
         [src]="bannerImg"
@@ -9,7 +12,7 @@
       />
       <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
     </div>
-    <div class="relative h-full flex items-center justify-center z-30">
+    <div class="relative h-full flex items-center justify-center ">
       <h1 class="text-5xl font-bold text-white">About Us</h1>
     </div>
   </div>
@@ -24,16 +27,16 @@
       <img [src]="patternLeftSvg" alt="Decorative Left SVG" class="w-auto h-auto" />
     </div>
     <!-- Who Are We Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div class="grid grid-cols-1  md:grid-cols-2 gap-8 items-center max-md:flex-col-reverse ">
       <div class="space-y-6 z-50">
-        <div class="flex">
+        <div class="flex max-md:justify-center">
           <div class="flex items-center px-4 py-2 rounded-full shadow-md">
             <img [src]="originIcon" alt="process Icon" class="w-5 h-5 mr-2" />
             <p class="text-gray-800">Origin</p>
           </div>
         </div>
-        <h2 class="text-3xl font-bold text-gray-900">Who Are We?</h2>
-        <p class="text-gray-600 leading-relaxed">
+        <h1 class="text-3xl font-bold text-gray-900">Who Are We?</h1>
+        <p class="text-gray-600 leading-relaxed font-semibold">
           ENVAI is a proud part of Perfect Timing Holding, a remarkable global group encompassing over thirty innovative companies. With a legacy of over 140 years, Perfect Timing Holding embodies a wealth of business experience and profound expertise across diverse sectors, including investment real estate, information technologies, and higher education.
         </p>
       </div>
@@ -41,32 +44,36 @@
         <img
           [src]="sideImg1"
           alt="Digital Network"
-          class="w-full h-full object-center rounded-lg"
+          class="w-full h-fit object-contain rounded-lg"
         />
       </div>
     </div>
 
     <!-- What We Do Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-md:flex-col md:flex-row-reverse">
+      <!-- Image Section -->
       <div class="h-[400px] flex justify-center items-center z-40">
         <img
           [src]="sideImg2"
           alt="Modern Interior"
-          class="w-full h-full object-center rounded-lg"
+          class="w-full h-fit object-contain rounded-lg"
         />
       </div>
+
+      <!-- Text Section -->
       <div class="space-y-6 z-50">
-        <div class="flex">
+        <div class="flex max-md:justify-center">
           <div class="flex items-center px-4 py-2 rounded-full shadow-md">
             <img [src]="progressIcon" alt="process Icon" class="w-5 h-5 mr-2" />
             <p class="text-gray-800">Progress</p>
           </div>
         </div>
-        <h2 class="text-3xl font-bold text-gray-900">What We Do?</h2>
-        <p class="text-gray-600 leading-relaxed">
+        <h1 class="text-3xl font-bold text-gray-900">What We Do?</h1>
+        <p class="text-gray-600 leading-relaxed font-semibold">
           ENVAI has identified and approved over 100 asset-backed real estate investment projects currently under construction. These projects are available to investors seeking exposure to alternative assets with the added benefits and convenience of tokenization and blockchain technologies.
         </p>
       </div>
     </div>
+
   </div>
 </div>
