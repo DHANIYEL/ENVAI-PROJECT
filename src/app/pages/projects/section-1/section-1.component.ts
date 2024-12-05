@@ -17,4 +17,11 @@ export class Section1Component {
   layoutIcon5 = 'assets/icon/layout5.svg'
   layoutIcon6 = 'assets/icon/layout6.svg'
   layoutIcon7 = 'assets/icon/layout7.svg'
+
+  investmentIcon = 'assets/icon/investment.svg'
+
+  patternSvg1 = 'assets/svg/pattern1.svg'
+  patternSvg2 = 'assets/svg/pattern2.svg'
+  patternSvg3 = 'assets/svg/pattern3.svg'
+  patternSvg4 = 'assets/svg/pattern4.svg'
 }
