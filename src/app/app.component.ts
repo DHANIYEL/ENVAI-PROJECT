@@ -2,12 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
-import { BannerSectionComponent } from './pages/home/banner-section/banner-section.component';
-import { Section2Component } from './pages/home/section-2/section-2.component';
-import { Section3Component } from './pages/home/section-3/section-3.component';
-import { Section4Component } from './pages/home/section-4/section-4.component';
-import { Section5Component } from './pages/home/section-5/section-5.component';
-import { Section6Component } from './pages/home/section-6/section-6.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PagesComponent } from "./pages/pages.component";
 
 @Component({
   selector: 'app-root',
@@ -16,13 +12,8 @@ import { Section6Component } from './pages/home/section-6/section-6.component';
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    BannerSectionComponent,
-    Section2Component,
-    Section3Component,
-    Section4Component,
-    Section5Component,
-    Section6Component
-  ],
+    HomeComponent,
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']  // Corrected property name to 'styleUrls'
 })

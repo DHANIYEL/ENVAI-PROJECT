@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PagesComponent } from './pages.component'; // Import PagesComponent
 import { ProjectCardComponent } from '../components/project-card/project-card.component';
-import { Section4Component } from './home/section-4/section-4.component';
 
 @NgModule({
   imports: [
@@ -13,7 +12,6 @@ import { Section4Component } from './home/section-4/section-4.component';
   ],
   declarations: [
     ProjectCardComponent,
-    Section4Component
   ],
   exports: [
     ProjectCardComponent,  // Export components you want to use outside

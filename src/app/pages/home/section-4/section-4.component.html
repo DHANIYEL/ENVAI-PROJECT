@@ -1,6 +1,6 @@
-<section class="max-w-7xl mx-auto px-4 py-16">
+<section class="max-w-7xl mx-auto px-4 py-6">
   <!-- Header -->
-  <div class="text-center mb-16">
+  <div class="text-center mb-4">
     <div
       class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-md mb-6"
     >
@@ -22,7 +22,7 @@
   </div>
 
   <!-- Projects Grid -->
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+  <div class="grid md:grid-cols-4 lg:grid-cols-4 gap-6 mb-12">
     <ng-container *ngFor="let project of projects">
       <div class="bg-gray-50 rounded-lg overflow-hidden">
         <!-- Project Image -->
@@ -62,7 +62,7 @@
     </ng-container>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 py-5 gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-4 py-5 gap-8">
     <!-- Example of a single project card -->
     <app-project-card
       img="assets/images/project1.jpg"
@@ -92,12 +92,6 @@
       img="assets/images/project5.jpg"
       name="Project Epsilon"
       description="Be part of a groundbreaking eco-friendly community."
-    ></app-project-card>
-
-    <app-project-card
-      img="assets/images/project6.jpg"
-      name="Project Zeta"
-      description="Support an ultra-modern smart city development."
     ></app-project-card>
 
     <app-project-card
