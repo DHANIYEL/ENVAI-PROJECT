@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  footerLogo = 'assets/logo/LOGO-WHITE.png';
 }
