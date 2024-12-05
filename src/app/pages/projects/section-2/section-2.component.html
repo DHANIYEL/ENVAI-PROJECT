@@ -1,1 +1,354 @@
-<p>section-2 works!</p>
+<section class="bg-dark">
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Header -->
+    <div class="text-center mb-16 flex justify-center items-center flex-col">
+      <div
+        class="flex items-center px-4 w-fit justify-center py-2 my-4 rounded-full shadow-md z-50"
+      >
+        <img [src]="buildingIcon" alt="location Icon" class="w-5 h-5 mr-2" />
+        <p class="text-gray-800">Projects</p>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">Types of Projects</h1>
+      <p class="text-gray-600 max-w-md">
+        ENVAI offers a variety of project types in real estate and buildings
+      </p>
+    </div>
+
+    <!-- Project Types -->
+    <div class="space-y-24">
+      <!-- Office Buildings -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <div class="flex items-start gap-3 flex-col">
+            <div class="p-2 bg-[#9FF485] rounded-lg">
+              <img [src]="projectSvg1" alt="" class="w-6 h-6" />
+            </div>
+            <h3 class="text-2xl font-bold">1. Office Buildings</h3>
+          </div>
+          <p class="text-gray-600">
+            Modern, energy-efficient office buildings are being developed to
+            cater to the growing demand from local and international businesses.
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <span>Invest</span>
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+          </button>
+        </div>
+        <div class="relative h-[400px] rounded-xl overflow-hidden">
+          <img
+            [src]="projectImg1"
+            alt="Modern office building"
+            class="w-full h-full object-center"
+          />
+        </div>
+      </div>
+
+      <!-- Shopping Malls -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div
+          class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
+        >
+          <img
+            [src]="projectImg2"
+            alt="Modern shopping mall at night"
+            class="w-full h-full object-center"
+          />
+        </div>
+        <div class="space-y-6 order-1 md:order-2">
+          <div class="flex items-start flex-col gap-3">
+            <div class="p-2 bg-[#F4232380] rounded-lg">
+              <img [src]="projectSvg2" alt="" class="w-6 h-6" />
+            </div>
+            <h3 class="text-2xl font-bold">2. Shopping Malls</h3>
+          </div>
+          <p class="text-gray-600">
+            Large-scale shopping malls with a mix of international and local
+            brands are being built in major cities and tourist destinations.
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <span>Invest</span>
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <div class="flex items-start gap-3 flex-col">
+            <div class="p-2 bg-[#FFD70080] rounded-lg">
+              <img [src]="projectSvg3" alt="" class="w-6 h-6" />
+            </div>
+            <h1 class="text-2xl font-bold">3. Hotels and Resorts</h1>
+          </div>
+          <p class="text-gray-600">
+            Luxury hotels and resorts are being constructed in popular tourist
+            destinations
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+            <span>Invest</span>
+          </button>
+        </div>
+        <div class="relative h-[400px] rounded-xl overflow-hidden">
+          <img
+            [src]="projectImg1"
+            alt="Modern office building"
+            class="w-full h-full object-center"
+          />
+        </div>
+      </div>
+
+      <!-- Shopping Malls -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div
+          class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
+        >
+          <img
+            [src]="projectImg5"
+            alt="Modern shopping mall at night"
+            class="w-full h-full object-center"
+          />
+        </div>
+        <div class="space-y-6 order-1 md:order-2">
+          <div class="flex items-start flex-col gap-3">
+            <div class="p-2 bg-[#F4232380] rounded-lg">
+              <img [src]="projectSvg4" alt="" class="w-6 h-6" />
+            </div>
+            <h1 class="text-2xl font-bold">
+              4. Industrial Parks and Warehouses
+            </h1>
+          </div>
+          <p class="text-gray-600">
+            Strategic industrial parks and warehouses are being developed to
+            support the growing manufacturing and logistics sectors.
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <span>Invest</span>
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <div class="flex items-start gap-3 flex-col">
+            <div class="p-2 bg-[#9FF485] rounded-lg">
+              <img [src]="projectSvg5" alt="" class="w-6 h-6" />
+            </div>
+            <h1 class="text-2xl font-bold">5. Apartments</h1>
+          </div>
+          <p class="text-gray-600">
+            Investing in apartment complexes can be a lucrative venture,
+            offering stable rental income, potential for appreciation, and tax
+            benefits.
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+            <span>Invest</span>
+          </button>
+        </div>
+        <div class="relative h-[400px] rounded-xl overflow-hidden">
+          <img
+            [src]="projectImg4"
+            alt="Modern office building"
+            class="w-full h-full object-center"
+          />
+        </div>
+      </div>
+
+      <!-- Shopping Malls -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div
+          class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
+        >
+          <img
+            [src]="projectImg5"
+            alt="Modern shopping mall at night"
+            class="w-full h-full object-center"
+          />
+        </div>
+        <div class="space-y-6 order-1 md:order-2">
+          <div class="flex items-start flex-col gap-3">
+            <div class="p-2 bg-[#F4232380] rounded-lg">
+              <img [src]="projectSvg6" alt="" class="w-6 h-6" />
+            </div>
+            <h1 class="text-2xl font-bold">6. Mixed-use</h1>
+          </div>
+          <p class="text-gray-600">
+            Developments combine residential, commercial, and retail components
+            and offer diverse amenities and services
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+            <span>Invest</span>
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <div class="flex items-start gap-3 flex-col">
+            <div class="p-2 bg-[#9FF485] rounded-lg">
+              <img [src]="projectSvg7" alt="" class="w-6 h-6" />
+            </div>
+            <h1 class="text-2xl font-bold">7. Airports</h1>
+          </div>
+          <p class="text-gray-600">
+            Bangui M'Poko International Airport is located seven kilometers
+            northwest of Bangui, the capital of the Central African Republic. It
+            is slated for renovation.
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+            <span>Invest</span>
+          </button>
+        </div>
+        <div class="relative h-[400px] rounded-xl overflow-hidden">
+          <img
+            [src]="projectImg6"
+            alt="Modern office building"
+            class="w-full h-full object-center"
+          />
+        </div>
+      </div>
+
+      <!-- Shopping Malls -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div
+          class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
+        >
+          <img
+            [src]="projectImg7"
+            alt="Modern shopping mall at night"
+            class="w-full h-full object-center"
+          />
+        </div>
+        <div class="space-y-6 order-1 md:order-2">
+          <div class="flex items-start flex-col gap-3">
+            <div class="p-2 bg-[#F4232380] rounded-lg">
+              <img [src]="projectSvg8" alt="" class="w-6 h-6" />
+            </div>
+            <h1 class="text-2xl font-bold">8. Data Centers</h1>
+          </div>
+          <p class="text-gray-600">
+            Investing in data centers offers several benefits, including
+            consistent rental income due to the high demand for data storage and
+            processing power, exposure to the rapidly growing digital economy,
+            and the potential for diversification in an investment portfolio.
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+            <span>Invest</span>
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <div class="flex items-start gap-3 flex-col">
+            <div class="p-2 bg-[#9FF485] rounded-lg">
+              <img [src]="projectSvg9" alt="" class="w-6 h-6" />
+            </div>
+            <h1 class="text-2xl font-bold">9. Resort Properties</h1>
+          </div>
+          <p class="text-gray-600">
+            These include all-inclusive resorts, boutique hotels, wellness
+            retreats, golf resorts, and historical and cultural resorts.
+          </p>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14m-7-7l7 7-7 7" strokeWidth="2" />
+            </svg>
+            <span>Invest</span>
+          </button>
+        </div>
+        <div class="relative h-[400px] rounded-xl overflow-hidden">
+          <img
+            [src]="projectImg8"
+            alt="Modern office building"
+            class="w-full h-full object-center"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
