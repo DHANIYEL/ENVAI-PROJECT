@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './section-5.component.css'
 })
 export class Section5Component {
+  investmentIcon6 = 'assets/icon/investment-icon6.svg';
+
+  projectImg1 = 'assets/projects/project-img1.png'
 
 }
