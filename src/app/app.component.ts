@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
+import { TokensComponent } from "./pages/tokens/tokens.component";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    ProjectsComponent
+    TokensComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']  // Corrected property name to 'styleUrls'

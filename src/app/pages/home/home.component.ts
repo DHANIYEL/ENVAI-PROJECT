@@ -15,7 +15,7 @@ import { Section6Component } from './section-6/section-6.component';
     Section3Component,
     Section4Component,
     Section5Component,
-    Section6Component
+    Section6Component,
   ],
   template: `
     <app-banner-section></app-banner-section>
