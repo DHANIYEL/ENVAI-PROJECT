@@ -1,14 +1,21 @@
 import { Component } from '@angular/core';
 import { ProjectCardModule } from '../../../components/project-card/project-card.module'; // Import the new module
+import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-section-4',
   standalone: true,
-  imports: [ProjectCardModule],  // Import the module (not the component directly anymore)
+  imports: [ProjectCardModule, NgForOf], // Import the module (not the component directly anymore)
   templateUrl: './section-4.component.html',
   styleUrls: ['./section-4.component.css'],
 })
 export class Section4Component {
-  statementImg = 'assets/icon/projects.svg';  // Example image for Section 4
+  statementImg = 'assets/icon/projects.svg'; // Example image for Section 4
 
+  projects = [
+    {
+      name: 'sample',
+      description: 'sample',
+    },
+  ];
 }
