@@ -17,6 +17,11 @@ export class Section1Component {
   tokenIcon3 = 'assets/icon/token-icon3.svg'
   tokenIcon4 = 'assets/icon/token-icon4.svg'
 
+  patternSvg1 = 'assets/svg/pattern1.svg'
+  patternSvg2 = 'assets/svg/pattern2.svg'
+  patternSvg3 = 'assets/svg/pattern3.svg'
+  patternSvg4 = 'assets/svg/pattern4.svg'
+
   projectImg1 = 'assets/projects/project-img1.png'
   projectImg2 = 'assets/projects/project-img2.png'
   projectImg3 = 'assets/projects/project-img3.png'

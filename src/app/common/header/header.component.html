@@ -1,76 +1,103 @@
-<div class="w-full px-4 py-8 ">
-  <div class="h-[72px]"></div> <!-- Adjust height as per your navbar's height -->
+<div class="w-full px-4 py-8">
+  <div class="h-[72px]"></div>
+  <!-- Adjust height as per your navbar's height -->
 
   <nav
-  class="fixed top-3 left-0 right-0 z-[999] bg-primary p-6 rounded-lg max-w-6xl max-md:rounded-none max-md:top-0 mx-auto "
+    class="fixed top-3 left-0 right-0 z-[999] bg-primary p-7 rounded-lg max-w-5xl max-md:rounded-none max-md:top-0 mx-auto"
   >
-  <div class=" flex items-center justify-between">
+    <div class="flex items-center justify-between">
+      <!-- Logo Section -->
+      <div class="flex items-center gap-2 ">
+        <img [src]="navLogo" alt="nav white logo" class="w-28 cursor-pointer" />
+      </div>
 
-    <!-- Logo Section -->
-    <div class="flex items-center gap-2">
-      <img [src]="navLogo" alt="nav white logo" class="w-28">
-    </div>
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a routerLink="" class="text-white hover:text-white/80 cursor-pointer"
+          >Home</a
+        >
+        <a
+          routerLink="/about"
+          class="text-white hover:text-white/80 cursor-pointer"
+          >About</a
+        >
+        <a
+          routerLink="projects"
+          class="text-white hover:text-white/80 cursor-pointer"
+          >Projects</a
+        >
 
-    <!-- Desktop Navigation Links -->
-    <div class="hidden md:flex items-center gap-8">
-      <a routerLink="" class="text-white hover:text-white/80">Home</a>
-      <a routerLink="/about" class="text-white hover:text-white/80">About</a>
-      <a routerLink="projects" class="text-white hover:text-white/80">Projects</a>
-      <a routerLink="tokens" class="text-white hover:text-white/80">Tokens</a>
-      <a routerLink="investment-rules" class="text-white hover:text-white/80">Investment Rules</a>
-    </div>
+        <a
+          routerLink="tokens"
+          class="text-white hover:text-white/80 cursor-pointer"
+          >Tokens</a
+        >
+        <a
+          routerLink="investment-rules"
+          class="text-white hover:text-white/80 cursor-pointer"
+          >Investment Rules</a
+        >
+      </div>
 
-    <!-- Contact Button (Desktop) -->
-    <button
-      class="hidden md:block bg-white text-primary px-6 py-2 rounded-md font-medium hover:bg-white/90"
-    >
-      Contact Us
-    </button>
+      <!-- Contact Button (Desktop) -->
+       <div class="flex gap-3">
 
-    <!-- Mobile Menu Button -->
-    <!-- Mobile Menu Button -->
-    <!-- Mobile Menu Button -->
-    <button class="md:hidden text-white" (click)="toggleMenu()">
-      <svg
-        *ngIf="!isMenuOpen"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        class="w-6 h-6"
+      <button
+        class="hidden md:block bg-white text-primary px-6 py-2 rounded-md font-medium hover:cursor-pointer transition-all duration-300 ease-in-out hover:translate-y-[-4px] hover:shadow-2xl"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
-      </svg>
-      <svg
-        *ngIf="isMenuOpen"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        class="w-6 h-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M6 18L18 6M6 6l12 12"
-        />
-      </svg>
-    </button>
-  </div>
+        Contact Us
+      </button>
+      <a
+          routerLink="invest"
+          class="text-primary hidden md:block bg-white px-3 py-2 rounded-md hover:cursor-pointer transition-all duration-300 ease-in-out hover:translate-y-[-4px] hover:shadow-2xl"
+        >
+          Invest
+        </a>
+      </div>
 
+      <!-- Mobile Menu Button -->
+      <!-- Mobile Menu Button -->
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white" (click)="toggleMenu()">
+        <svg
+          *ngIf="!isMenuOpen"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <svg
+          *ngIf="isMenuOpen"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
   </nav>
 </div>
 
-  <!-- Mobile Menu Overlay -->
-  <div
+<!-- Mobile Menu Overlay -->
+<div
   *ngIf="isMenuOpen"
-  class="fixed inset-0 bg-primary z-50 flex flex-col items-center justify-center"
+  class="fixed inset-0 bg-primary z-[999] flex flex-col items-center justify-center"
 >
   <!-- Background SVG: Bottom Left -->
   <svg
@@ -130,10 +157,7 @@
   </svg>
 
   <!-- Close Button -->
-  <button
-    class="absolute top-4 right-4 text-white p-2"
-    (click)="toggleMenu()"
-  >
+  <button class="absolute top-4 right-4 text-white p-2" (click)="toggleMenu()">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -153,10 +177,23 @@
   <!-- Mobile Navigation Links -->
   <div class="flex flex-col items-center gap-8 text-center">
     <a routerLink="" class="text-white text-2xl hover:text-white/80">Home</a>
-    <a routerLink="about" class="text-white text-2xl hover:text-white/80">About</a>
-    <a routerLink="projects" class="text-white text-2xl hover:text-white/80">Projects</a>
-    <a routerLink="tokens" class="text-white text-2xl hover:text-white/80">Tokens</a>
-    <a routerLink="investment-rules" class="text-white text-2xl hover:text-white/80">Investment Rules</a>
+    <a routerLink="about" class="text-white text-2xl hover:text-white/80"
+      >About</a
+    >
+    <a routerLink="projects" class="text-white text-2xl hover:text-white/80"
+      >Projects</a
+    >
+    <a routerLink="tokens" class="text-white text-2xl hover:text-white/80"
+      >Tokens</a
+    >
+    <a
+      routerLink="investment-rules"
+      class="text-white text-2xl hover:text-white/80"
+      >Investment Rules</a
+    >
+    <a routerLink="invest" class="text-primary bg-white hover:bg-gray-200 px-4 rounded-md py-2 cursor-pointer"
+      >Invest
+    </a>
   </div>
 
   <!-- Contact Button -->
@@ -171,9 +208,8 @@
     <div class="flex items-center gap-2">
       <div class="flex items-center gap-2 cursor-pointer">
         <a routerLink="/">
-
-        <img [src]="navLogo" alt="nav white logo" class="w-40">
-          </a>
+          <img [src]="navLogo" alt="nav white logo" class="w-40" />
+        </a>
       </div>
     </div>
   </div>
