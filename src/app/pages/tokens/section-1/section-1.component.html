@@ -47,7 +47,7 @@
       <!-- Subtitle -->
       <p class="text-center text-gray-600 mb-12 max-w-sm z-50">
         Security tokens offer a revolutionary approach to funding real estate
-        investments.   Here's a breakdown of the process:
+        investments. Here's a breakdown of the process:
       </p>
     </div>
 
@@ -106,7 +106,14 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row gap-12 items-center w-full">
+      <div
+        class="flex flex-col md:flex-row gap-12 items-center w-full relative"
+      >
+        <img
+          [src]="patternSvg1"
+          alt="Pattern 1"
+          class="absolute top-32 max-md:hidden -left-40 max-md:top-3/4 w-100 h-100 opacity-75 z-0"
+        />
         <!-- Content -->
         <div class="space-y-6">
           <div class="flex items-start flex-col gap-2 mb-4">
@@ -116,11 +123,11 @@
               <img
                 [src]="tokenIcon2"
                 alt="location Icon"
-                class="w-5 h-5 mr-2"
+                class="w-5 h-5 mr-2 z-50"
               />
-              <p class="text-gray-800">Selling</p>
+              <p class="text-gray-800 z-50">Selling</p>
             </div>
-            <h1 class="text-xl font-semibold">ii. Token Sale</h1>
+            <h1 class="text-xl font-semibold z-50">ii. Token Sale</h1>
           </div>
 
           <div class="space-y-4">
@@ -141,7 +148,7 @@
             </div>
 
             <div>
-              <p class="text-gray-800">
+              <p class="text-gray-800 z-50">
                 3. <strong>Token Distribution:</strong> Investors purchase
                 tokens representing fractional ownership of the property.
               </p>
@@ -149,11 +156,10 @@
           </div>
         </div>
         <img
-        [src]="tokenImg2"
-        alt="projectImg1"
-        class="w-full md:w-1/2 object-cover rounded-md h-auto md:h-[400px]"
-      />
-
+          [src]="tokenImg2"
+          alt="projectImg1"
+          class="w-full md:w-1/2 z-50 object-cover rounded-md h-auto md:h-[400px]"
+        />
       </div>
 
       <div class="flex flex-col-reverse md:flex-row gap-12 items-center w-full">
@@ -161,7 +167,7 @@
         <img
           [src]="tokenImg3"
           alt="projectImg1"
-          class="w-full md:w-1/2 object-cover rounded-md h-auto md:h-[400px]"
+          class="w-full md:w-1/2 z-50 object-cover rounded-md h-auto md:h-[400px]"
         />
 
         <!-- Content -->

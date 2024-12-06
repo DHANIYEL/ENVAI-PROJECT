@@ -21,6 +21,10 @@ export class Section2Component {
   tokenIcon9 = 'assets/icon/token-icon9.svg'
   tokenIcon10 = 'assets/icon/token-icon10.svg'
 
+  patternSvg1 = 'assets/svg/pattern1.svg'
+  patternSvg2 = 'assets/svg/pattern2.svg'
+  patternSvg3 = 'assets/svg/pattern3.svg'
+  patternSvg4 = 'assets/svg/pattern4.svg'
 
   tokenImg5 = 'assets/tokens/token-img5.jpg'
   tokenImg6 = 'assets/tokens/token-img6.jpg'

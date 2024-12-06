@@ -4,7 +4,7 @@
 
 
 /* Use Raleway for general text and subheadings */
-body, p, span, h2, h3, h4, h5, h6 {
+body, p, span, h2, h3, h4, h5, h6, li, ul {
   font-family: 'Raleway', sans-serif;
 }
 

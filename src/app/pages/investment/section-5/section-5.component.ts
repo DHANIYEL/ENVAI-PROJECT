@@ -12,4 +12,10 @@ export class Section5Component {
 
   projectImg1 = 'assets/projects/project-img1.png'
 
+
+  patternSvg1 = 'assets/svg/pattern1.svg'
+  patternSvg2 = 'assets/svg/pattern2.svg'
+  patternSvg3 = 'assets/svg/pattern3.svg'
+  patternSvg4 = 'assets/svg/pattern4.svg'
+
 }
