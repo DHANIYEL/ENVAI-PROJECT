@@ -4,6 +4,7 @@ import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { InvestComponent } from "./pages/investment/invest/invest.component";
 import { TokensComponent } from "./pages/tokens/tokens.component";
+import { InvestmentComponent } from "./pages/investment/investment.component";
 
 @Component({
   selector: 'app-root',

@@ -21,12 +21,11 @@ export class Section2Component {
   tokenIcon9 = 'assets/icon/token-icon9.svg'
   tokenIcon10 = 'assets/icon/token-icon10.svg'
 
-  projectImg1 = 'assets/projects/project-img1.png'
-  projectImg2 = 'assets/projects/project-img2.png'
-  projectImg3 = 'assets/projects/project-img3.png'
-  projectImg4 = 'assets/projects/project-img4.png'
-  projectImg5 = 'assets/projects/project-img5.png'
-  projectImg6 = 'assets/projects/project-img6.png'
-  projectImg7 = 'assets/projects/project-img7.png'
-  projectImg8 = 'assets/projects/project-img8.png'
+
+  tokenImg5 = 'assets/tokens/token-img5.jpg'
+  tokenImg6 = 'assets/tokens/token-img6.jpg'
+  tokenImg7 = 'assets/tokens/token-img7.jpg'
+  tokenImg8 = 'assets/tokens/token-img8.jpg'
+  tokenImg9 = 'assets/tokens/token-img9.jpg'
+  tokenImg10 = 'assets/tokens/token-img10.jpg'
 }

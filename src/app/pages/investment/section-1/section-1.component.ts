@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class Section1Component {
   bannerImg = 'assets/investment/investment-banner.jpeg';
-}
+
+  patternSvg1 = 'assets/svg/pattern1.svg'
+  patternSvg2 = 'assets/svg/pattern2.svg'
+  patternSvg3 = 'assets/svg/pattern3.svg'
+  patternSvg4 = 'assets/svg/pattern4.svg'
+  }
