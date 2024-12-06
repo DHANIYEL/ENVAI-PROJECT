@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
-import { ContactComponent } from "./pages/contact/contact.component";
+import { InvestComponent } from "./pages/investment/invest/invest.component";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { ContactComponent } from "./pages/contact/contact.component";
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    ContactComponent
+    InvestComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']  // Corrected property name to 'styleUrls'
