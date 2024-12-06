@@ -14,28 +14,39 @@
       <!-- Desktop Navigation Links -->
       <div class="hidden md:flex items-center gap-8">
         <a
-          [routerLink]="''"
+          [routerLink]="'/'"
+            routerLinkActive="font-bold"
+            [routerLinkActiveOptions]="{ exact: true }"
+
           class="text-white hover:text-white/80 cursor-pointer"
           >Home</a
         >
         <a
           [routerLink]="'about'"
+            routerLinkActive="font-bold"
+
           class="text-white hover:text-white/80 cursor-pointer"
           >About</a
         >
         <a
           [routerLink]="'projects'"
+            routerLinkActive="font-bold"
+
           class="text-white hover:text-white/80 cursor-pointer"
           >Projects</a
         >
 
         <a
           routerLink="tokens"
+            routerLinkActive="font-bold"
+
           class="text-white hover:text-white/80 cursor-pointer"
           >Tokens</a
         >
         <a
           routerLink="investment-rules"
+            routerLinkActive="font-bold"
+
           class="text-white hover:text-white/80 cursor-pointer"
           >Investment Rules</a
         >
@@ -44,7 +55,7 @@
       <!-- Contact Button (Desktop) -->
       <div class="flex gap-3">
         <button
-          [routerLink]="''"
+          [routerLink]="'contact-us'"
           class="hidden md:block bg-white text-primary px-6 py-2 rounded-md font-medium hover:cursor-pointer transition-all duration-300 ease-in-out hover:translate-y-[-4px] hover:shadow-2xl"
         >
           Contact Us
