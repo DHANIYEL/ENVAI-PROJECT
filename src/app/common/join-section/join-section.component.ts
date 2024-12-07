@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-join-section',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './join-section.component.html',
   styleUrl: './join-section.component.css'
 })
