@@ -19,12 +19,7 @@ export class Section4Component {
   patternSvg3 = 'assets/svg/pattern3.svg'
   patternSvg4 = 'assets/svg/pattern4.svg'
 
-  projectImg1 = 'assets/projects/project-img1.png'
-  projectImg2 = 'assets/projects/project-img2.png'
-  projectImg3 = 'assets/projects/project-img3.png'
-  projectImg4 = 'assets/projects/project-img4.png'
-  projectImg5 = 'assets/projects/project-img5.png'
-  projectImg6 = 'assets/projects/project-img6.png'
-  projectImg7 = 'assets/projects/project-img7.png'
-  projectImg8 = 'assets/projects/project-img8.png'
+  projectImg1 = 'assets/investment-rule/PROCESS.jpg'
+  projectImg2 = 'assets/investment-rule/BENEFITS-SMART-CONTRACT.jpg'
+  projectImg3 = 'assets/investment-rule/LEVARAGING-SMART-CONTRACTS.jpg'
 }
