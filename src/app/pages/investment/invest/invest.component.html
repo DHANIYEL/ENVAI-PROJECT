@@ -1,132 +1,127 @@
 <section class="max-w-7xl mx-auto">
 
-<div class=" py-20 flex flex-col md:flex-row gap-8 px-10">
-  <!-- Left Section -->
-  <div class="w-full md:w-1/2">
-    <h1 class="text-4xl font-bold mb-6">How to invest</h1>
+  <div class=" py-20 flex flex-col md:flex-row gap-8 px-10">
+    <!-- Left Section -->
+    <div class="w-full md:w-1/2">
+      <h1 class="text-4xl font-bold mb-6">How to Invest with ENVAI</h1>
 
-    <p class="text-gray-700 mb-6">
-      ENVAI is a block chain based marketplace, where buyers & sellers meet to carry out operations involving digital goods & assets with.
-    </p>
+      <p class="text-gray-700 mb-6">
+        ENVAI is a blockchain-based platform enabling secure, transparent investments in asset-backed real estate
+        projects. Follow these simple steps to start
+        investing with ENVAI:
+      </p>
 
-    <div class="space-y-4">
-      <div>
-        <p class="text-gray-800">
-          <span class="font-bold">Step 1:</span> Get a Crypto Wallet. Before buying tokens, investors will need to get a crypto wallet.
-        </p>
-      </div>
+      <div class="space-y-4">
+        <div>
+          <p class="text-gray-800">
+            <span class="font-bold">Step 1:</span> Get a Crypto Wallet. Before buying tokens, investors will need to get
+            a crypto wallet.
+          </p>
+        </div>
 
-      <div>
-        <p class="text-gray-800">
-          <span class="font-bold">Step 2:</span> Choose the project you want to invest in (Investment Type)
-        </p>
-      </div>
+        <div>
+          <p class="text-gray-800">
+            <span class="font-bold">Step 2:</span> Choose the project you want to invest in (Investment Type)
+          </p>
+        </div>
 
-      <div>
-        <p class="text-gray-800">
-          <span class="font-bold">Step 3:</span> Choose the amount you want to invest in the specific project.
-        </p>
-      </div>
+        <div>
+          <p class="text-gray-800">
+            <span class="font-bold">Step 3:</span> Choose the amount you want to invest in the specific project.
+          </p>
+        </div>
 
-      <div>
-        <p class="text-gray-800">
-          <span class="font-bold">Step 4:</span> Enter your valid Wallet Adresse
-        </p>
-      </div>
+        <div>
+          <p class="text-gray-800">
+            <span class="font-bold">Step 4:</span> Enter your valid Wallet Adresse
+          </p>
+        </div>
 
-      <div>
-        <p class="text-gray-800">
-          <span class="font-bold">Step 5:</span> Pay with Crypto or FIAT as per your convinience!
-        </p>
-      </div>
-      <div>
-        <img [src]="mainImg" alt="baner img" class="object-contain rounded-lg max-w-xl ">
+        <div>
+          <p class="text-gray-800">
+            <span class="font-bold">Step 5:</span> Pay with Crypto or FIAT as per your convinience!
+          </p>
+        </div>
+        <div>
+          <p class="text-gray-800">
+            <span class="font-bold">Start investing with ENVAI today and secure your future!</span>
+          </p>
+        </div>
+        <div>
+          <img [src]="mainImg" alt="baner img" class="object-contain rounded-lg max-w-xl ">
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Right Section -->
-  <div class="w-full flex justify-center">
-    <div class="bg-gray-50 rounded-lg p-8 h-fit w-full shadow-sm max-w-xl">
-      <div class="flex justify-center mb-6">
-        <img [src]="tokenImg" alt="iSAP Token" class="w-24 h-24">
+    <!-- Right Section -->
+    <div class="w-full flex justify-center">
+      <div class="bg-gray-50 rounded-lg p-8 h-fit w-full shadow-sm max-w-xl">
+        <div class="flex justify-center mb-6">
+          <img [src]="tokenImg" alt="iSAP Token" class="w-24 h-24">
+        </div>
+
+        <div class="text-center mb-8">
+          <h2 class="text-xl font-bold mb-2">Token Price</h2>
+          <p class="text-lg">1 USD = 1 ENVAI</p>
+        </div>
+
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Select investment type
+            </label>
+            <select class="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-indigo-500">
+              <option value="" disabled selected>Select...</option>
+              <option value="type1">Office Buildings</option>
+              <option value="type2">Shopping Malls</option>
+              <option value="type3">Hotels And Resorts</option>
+              <option value="type4">Industrial Parks and Warehouses</option>
+              <option value="type5">Apartments</option>
+              <option value="type6">Mixed-use</option>
+              <option value="type7">Airports</option>
+              <option value="type8">Data Centers</option>
+              <option value="type9">Resort Properties</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Amount
+            </label>
+            <input type="number" placeholder="Enter Amount in USD"
+              class="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-indigo-500">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Tokens
+            </label>
+            <input type="number" placeholder="Number of Tokens"
+              class="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-indigo-500">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Wallet Address
+            </label>
+            <input type="text" placeholder="Enter your wallet Address"
+              class="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-indigo-500">
+          </div>
+
+          <div class="flex gap-3">
+            <button type="button"
+              class="w-1/2 bg-gray-800 text-white py-2 px-4 rounded-md text-sm hover:bg-gray-700 transition-colors">
+              Pay With Crypto
+            </button>
+            <button type="button"
+              class="w-1/2 bg-blue-600 text-white py-2 px-4 rounded-md text-sm hover:bg-blue-500 transition-colors">
+              Pay With PayPal
+            </button>
+          </div>
+        </form>
       </div>
-
-      <div class="text-center mb-8">
-        <h2 class="text-xl font-bold mb-2">Token Price</h2>
-        <p class="text-lg">1 USD = 1 ENVAI</p>
-      </div>
-
-      <form class="space-y-4">
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">
-            Select investment type
-          </label>
-          <select class="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-indigo-500">
-            <option value="" disabled selected>Select...</option>
-            <option value="type1">Office Buildings</option>
-            <option value="type2">Shopping Malls</option>
-            <option value="type3">Hotels And Resorts</option>
-            <option value="type4">Industrial Parks and Warehouses</option>
-            <option value="type5">Apartments</option>
-            <option value="type6">Mixed-use</option>
-            <option value="type7">Airports</option>
-            <option value="type8">Data Centers</option>
-            <option value="type9">Resort Properties</option>
-          </select>
-        </div>
-
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">
-            Amount
-          </label>
-          <input
-            type="number"
-            placeholder="Enter Amount in USD"
-            class="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-indigo-500"
-          >
-        </div>
-
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">
-            Tokens
-          </label>
-          <input
-            type="number"
-            placeholder="Number of Tokens"
-            class="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-indigo-500"
-          >
-        </div>
-
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">
-            Wallet Address
-          </label>
-          <input
-            type="text"
-            placeholder="Enter your wallet Address"
-            class="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-indigo-500"
-          >
-        </div>
-
-        <div class="flex gap-3">
-          <button
-            type="button"
-            class="w-1/2 bg-gray-800 text-white py-2 px-4 rounded-md text-sm hover:bg-gray-700 transition-colors"
-          >
-            Pay With Crypto
-          </button>
-          <button
-            type="button"
-            class="w-1/2 bg-blue-600 text-white py-2 px-4 rounded-md text-sm hover:bg-blue-500 transition-colors"
-          >
-            Pay With PayPal
-          </button>
-        </div>
-      </form>
     </div>
-  </div>
 
-</div>
+  </div>
 
 </section>
