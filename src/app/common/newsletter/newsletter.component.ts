@@ -53,10 +53,10 @@ export class NewsletterComponent {
 
     emailjs
       .send(
-        'service_lisyi4o', // Replace with your EmailJS Service ID
-        'template_prltv5s', // Replace with your EmailJS Template ID
+        'service_tj6xndc', // Replace with your EmailJS Service ID
+        'template_7kqcyw7', // Replace with your EmailJS Template ID
         templateParams,
-        'Ueg7o-QUEuKvqMRqr' // Replace with your EmailJS Public Key
+        'bgk0Lnz7sDSh07-wX' // Replace with your EmailJS Public Key
       )
       .then(
         () => {
