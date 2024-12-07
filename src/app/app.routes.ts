@@ -6,7 +6,6 @@ import { TokensComponent } from './pages/tokens/tokens.component';
 import { InvestmentComponent } from './pages/investment/investment.component';
 import { InvestComponent } from './pages/investment/invest/invest.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { RiskStatementComponent } from './pages/risk-statement/risk-statement.component';
@@ -21,7 +20,6 @@ export const routes: Routes = [
   { path: 'investment-rules', component: InvestmentComponent },
   { path: 'invest', component: InvestComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'how-it-works', component: HowItWorksComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'terms', component: TermsComponent },
   { path: 'risk-statement', component: RiskStatementComponent },
