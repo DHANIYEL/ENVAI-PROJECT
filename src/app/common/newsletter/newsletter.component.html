@@ -11,24 +11,32 @@
 
       <!-- Email Input Form -->
       <form
-        [formGroup]="FormData"
-        (ngSubmit)="onSubmit()"
-        class="flex gap-2 w-full mb-6 max-sm:flex-col"
+      [formGroup]="FormData"
+      (ngSubmit)="onSubmit()"
+      class="flex gap-2 w-full mb-6 max-sm:flex-col"
+    >
+      <input
+        type="email"
+        formControlName="email"
+        placeholder="Enter your email"
+        class="flex-1 px-4 py-2 rounded-md text-gray-900"
+      />
+
+      <!-- Display error message when email is empty or invalid -->
+
+      <button
+      type="submit"
+      class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition-colors cursor-pointer"
+      [disabled]="isSubmitting || FormData.invalid"
       >
-        <input
-          type="email"
-          formControlName="email"
-          placeholder="Enter your email"
-          class="flex-1 px-4 py-2 rounded-md text-gray-900"
-        />
-        <button
-          type="submit"
-          class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition-colors"
-          [disabled]="isSubmitting"
-        >
-          Submit
-        </button>
-      </form>
+      Submit
+    </button>
+  </form>
+  <div *ngIf="email?.invalid && (email?.touched || submitted)" class="text-red-500 text-sm ">
+    <div *ngIf="email?.hasError('required')">Enter a mail</div>
+    <div *ngIf="email?.hasError('email')">Please enter a valid email address.</div>
+  </div>
+
 
       <!-- Feedback Messages -->
       <div *ngIf="isSuccess" class="text-green-500 mt-2">Subscription successful!</div>
