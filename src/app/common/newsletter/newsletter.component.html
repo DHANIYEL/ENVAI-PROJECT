@@ -1,31 +1,46 @@
-<!-- Newsletter Section -->
 <section class="max-w-7xl mx-auto max-md:px-4 py-5">
   <div
     class="flex flex-col bg-cover bg-center w-full rounded-lg p-8 text-white"
     [style.background-image]="'url(' + newsLetterImg + ')'"
   >
-    <!-- Content -->
     <div class="max-w-2xl w-full flex flex-col">
       <h1 class="text-4xl font-bold mb-4 text-left">Subscribe to our newsletter</h1>
       <p class="text-gray-200 mb-6 text-left">
         Learn about our latest news, updates, and investments
       </p>
 
-      <!-- Input and Button -->
-      <form class="flex gap-2 w-full mb-6 max-sm:flex-col">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          class="flex-1 px-4 py-2 rounded-md text-gray-900"
-          name="email"
-        />
-        <button
-          type="submit"
-          class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition-colors"
-        >
-          Submit
-        </button>
-      </form>
+      <!-- Email Input Form -->
+      <form
+      [formGroup]="FormData"
+      (ngSubmit)="onSubmit()"
+      class="flex gap-2 w-full mb-6 max-sm:flex-col"
+    >
+      <input
+        type="email"
+        formControlName="email"
+        placeholder="Enter your email"
+        class="flex-1 px-4 py-2 rounded-md text-gray-900"
+      />
+
+      <!-- Display error message when email is empty or invalid -->
+
+      <button
+      type="submit"
+      class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition-colors cursor-pointer"
+      [disabled]="isSubmitting || FormData.invalid"
+      >
+      Submit
+    </button>
+  </form>
+  <div *ngIf="email?.invalid && (email?.touched || submitted)" class="text-red-500 text-sm ">
+    <div *ngIf="email?.hasError('required')">Enter a mail</div>
+    <div *ngIf="email?.hasError('email')">Please enter a valid email address.</div>
+  </div>
+
+
+      <!-- Feedback Messages -->
+      <div *ngIf="isSuccess" class="text-green-500 mt-2">Subscription successful!</div>
+      <div *ngIf="isError" class="text-red-500 mt-2">Failed to subscribe. Please try again.</div>
     </div>
 
     <!-- Social Media Icons at End -->
@@ -46,6 +61,5 @@
         <img [src]="youtubeIcon" alt="youtube account" class="w-7 h-7" />
       </a>
     </div>
-
   </div>
 </section>

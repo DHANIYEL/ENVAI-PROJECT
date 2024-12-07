@@ -1,5 +1,5 @@
 <section class="bg-dark mb-16">
-  <div class="max-w-7xl mx-auto px-4 py-16">
+  <div class="max-w-7xl mx-auto px-4 py-16 relative">
     <img
     [src]="patternSvg1"
     alt="Pattern 1"
@@ -16,6 +16,7 @@
     alt="Pattern 2"
     class="absolute top-3/4 max-md:hidden right-10 w-100 h-100 opacity-75 z-10 transform -rotate-30 translate-x-8 translate-y-12"
   />
+
     <!-- Header -->
     <div class="text-center mb-16 flex justify-center items-center flex-col">
       <div
@@ -31,11 +32,16 @@
     </div>
 
     <!-- Project Types -->
-    <div class="space-y-24">
+    <div class="space-y-24 ">
       <!-- Office Buildings -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div class="space-y-6">
-          <div class="flex items-start gap-3 flex-col">
+      <div class="grid grid-cols-1 relative  md:grid-cols-2 gap-8 items-center">
+        <img
+        [src]="patternSvg4"
+        alt="Pattern 2"
+        class="absolute bottom-1/2 max-md:hidden left-10 w-100 h-100 opacity-75 z-10 transform -rotate-30 translate-x-8 translate-y-12"
+      />
+        <div class="space-y-6 z-50">
+          <div class="flex items-start gap-3 flex-col z-50">
             <div class="p-2 bg-[#9FF485] rounded-lg">
               <img [src]="projectSvg1" alt="" class="w-6 h-6" />
             </div>
@@ -69,7 +75,7 @@
       </div>
 
       <!-- Shopping Malls -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
         <div
           class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
         >
@@ -107,7 +113,7 @@
       </div>
 
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
         <div class="space-y-6">
           <div class="flex items-start gap-3 flex-col">
             <div class="p-2 bg-[#FFD70080] rounded-lg">
@@ -143,7 +149,7 @@
       </div>
 
       <!-- Shopping Malls -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
         <div
           class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
         >
@@ -183,7 +189,7 @@
       </div>
 
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
         <div class="space-y-6">
           <div class="flex items-start gap-3 flex-col">
             <div class="p-2 bg-[#9FF485] rounded-lg">
@@ -220,7 +226,7 @@
       </div>
 
       <!-- Shopping Malls -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
         <div
           class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
         >
@@ -256,7 +262,7 @@
           </button>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
         <div class="space-y-6">
           <div class="flex items-start gap-3 flex-col">
             <div class="p-2 bg-[#9FF485] rounded-lg">
@@ -293,7 +299,7 @@
       </div>
 
       <!-- Shopping Malls -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
         <div
           class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
         >
@@ -331,7 +337,7 @@
           </button>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
         <div class="space-y-6">
           <div class="flex items-start gap-3 flex-col">
             <div class="p-2 bg-[#9FF485] rounded-lg">
