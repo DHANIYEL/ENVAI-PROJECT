@@ -51,15 +51,14 @@
       </p>
     </div>
 
-    <div class="flex flex-col gap-16">
+    <div class="flex flex-col gap-16 ">
       <!-- Property Tokenization Section -->
-      <div class="flex flex-col-reverse md:flex-row gap-12 items-center w-full">
+      <div class="flex flex-col-reverse md:flex-row justify-center gap-12 items-center w-full max-w-5xl">
         <!-- Image placeholder -->
-
         <img
           [src]="tokenImg1"
           alt="projectImg1"
-          class="w-full md:w-1/2 object-cover rounded-md h-auto md:h-[400px]"
+          class="w-fit md:w-fit object-contain rounded-md h-[500px]"
         />
         <div class="space-y-6 max-md:text-center">
           <div class="flex items-start flex-col gap-2 mb-4">
@@ -71,7 +70,7 @@
                 alt="location Icon"
                 class="w-5 h-5 mr-2"
               />
-              <p class="text-gray-800 ">Property</p>
+              <p class="text-gray-800">Property</p>
             </div>
             <div class="flex items-center gap-2 mb-4">
               <h1 class="text-4xl max-md:text-2xl font-semibold">i. Property Tokenization</h1>
@@ -106,9 +105,8 @@
         </div>
       </div>
 
-      <div
-        class="flex flex-col md:flex-row gap-12 items-center w-full relative"
-      >
+      <!-- Token Sale Section -->
+      <div class="flex flex-col md:flex-row gap-12 justify-center items-center w-full relative max-w-5xl">
         <img
           [src]="patternSvg1"
           alt="Pattern 1"
@@ -132,7 +130,7 @@
 
           <div class="space-y-4">
             <div>
-              <p class="text-gray-800  max-w-lg">
+              <p class="text-gray-800 max-w-lg">
                 1. <strong>Regulatory Compliance:</strong> The token sale must
                 comply with relevant securities regulations, such as SEC
                 regulations in the US or similar regulations in other
@@ -158,18 +156,18 @@
         <img
           [src]="tokenImg2"
           alt="projectImg1"
-          class="w-full md:w-1/2 z-50 object-cover rounded-md h-auto md:h-[400px]"
+          class="w-fit md:w-fit object-contain rounded-md h-[500px]"
         />
       </div>
 
-      <div class="flex flex-col-reverse md:flex-row gap-12 items-center w-full">
+      <!-- Property Management Section -->
+      <div class="flex flex-col-reverse md:flex-row justify-center gap-12 items-center w-full max-w-5xl">
         <!-- Image placeholder -->
         <img
           [src]="tokenImg3"
           alt="projectImg1"
-          class="w-full md:w-1/2 z-50 object-cover rounded-md h-auto md:h-[400px]"
+          class="w-fit md:w-fit object-contain rounded-md h-[500px]"
         />
-
         <!-- Content -->
         <div class="space-y-6">
           <div class="flex items-start flex-col gap-2 mb-4">
@@ -208,7 +206,8 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row gap-12 items-center w-full">
+      <!-- Benefits Section -->
+      <div class="flex flex-col-reverse md:flex-row justify-center gap-12 items-center w-full max-w-5xl">
         <div class="space-y-6">
           <div class="flex items-start flex-col gap-2 mb-4">
             <div
@@ -269,23 +268,16 @@
                 secure and tamperproof record of ownership.
               </p>
             </div>
-
-            <div>
-              <p class="font-semibold">6. Security:</p>
-              <p class="text-gray-600">
-                Blockchain technology provides a secure and tamperproof record
-                of ownership.
-              </p>
-            </div>
           </div>
         </div>
 
         <img
           [src]="tokenImg4"
           alt="projectImg1"
-          class="w-full md:w-1/2 object-cover h-auto rounded-md md:h-[400px]"
+          class="w-fit md:w-fit object-contain h-[500px] rounded-md"
         />
       </div>
     </div>
+
   </div>
 </div>

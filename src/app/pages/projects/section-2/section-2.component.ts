@@ -20,6 +20,11 @@ export class Section2Component {
   projectImg7 = 'assets/projects/project-img7.png'
   projectImg8 = 'assets/projects/project-img8.png'
 
+  patternSvg1 = 'assets/svg/pattern1.svg'
+  patternSvg2 = 'assets/svg/pattern2.svg'
+  patternSvg3 = 'assets/svg/pattern3.svg'
+  patternSvg4 = 'assets/svg/pattern4.svg'
+
   projectSvg1 = 'assets/icon/project-svg1.svg'
   projectSvg2 = 'assets/icon/project-svg2.svg'
   projectSvg3 = 'assets/icon/project-svg3.svg'
