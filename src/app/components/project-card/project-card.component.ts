@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 export class ProjectCardComponent {
   @Input() name: string = 'Project name';
   @Input() description: string = 'Project description over here. Project description over here.';
-  @Input() imageUrl: string = 'assets/home/project-img.png';
+  @Input() imageUrl: string = ''; // This defines the imageUrl property
 
   rightArrowIcon = 'assets/icon/right-arrow.svg';
 
