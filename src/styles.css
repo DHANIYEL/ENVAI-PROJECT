@@ -13,3 +13,12 @@ h1 {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700; /* Adjust weight as needed */
 }
+
+
+@media only screen and (max-width: 768px) {
+  #gt_float_wrapper {
+    top: auto !important;
+    bottom: 16px !important;
+
+  }
+}
