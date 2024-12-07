@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-banner-section',
@@ -16,4 +16,11 @@ export class BannerSectionComponent {
   heroLeftSvg = 'assets/svg/hero-left.svg';
   heroRightSvg = 'assets/svg/hero-right.svg';
 
+
+  scrollToSection() {
+    const target = document.getElementById('aboutSection');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
