@@ -2,7 +2,21 @@
   <!-- Hero Section -->
 
 
-
+  <img
+  [src]="patternSvg1"
+  alt="Pattern 1"
+  class="absolute top-2/3 max-md:hidden left-0  w-100 h-100 opacity-75 z-0"
+/>
+<img
+  [src]="patternSvg2"
+  alt="Pattern 2"
+  class="absolute  top-32 right-0 w-100 h-100 opacity-75 z-0"
+/>
+<img
+  [src]="patternSvg4"
+  alt="Pattern 2"
+  class="absolute  top-32 left-0 w-100 h-100 opacity-75 z-0"
+/>
   <!-- Main Content -->
   <div class="max-w-6xl mx-auto px-4 py-12 ">
     <!-- Security Label -->
@@ -20,22 +34,22 @@
       </h1>
     </div>
 
-    <div class="flex flex-col gap-16">
+    <div class="flex flex-col gap-16 z-50">
       <!-- Property Tokenization Section -->
-      <div class="flex flex-col md:flex-row gap-12 items-center w-full">
+      <div class="flex flex-col md:flex-row gap-12 items-center w-full ">
         <!-- Image placeholder -->
 
         <div class="space-y-6 max-md:text-center">
           <div class="flex items-start flex-col gap-2 mb-4">
             <div class="flex items-center gap-2 mb-4">
-              <h1 class="text-2xl max-md:text-2xl font-semibold">i. Token Terms</h1>
+              <h1 class="text-2xl max-md:text-2xl font-semibold z-50">i. Token Terms</h1>
             </div>
           </div>
 
           <div class="space-y-4 z-50">
             <!-- Step 1 -->
             <div>
-              <p class="text-gray-800">
+              <p class="text-gray-800 z-20 relative">
                 1. <strong>Token Type:</strong> This could be an equity token,
                 debt token, or a hybrid. Equity tokens represent ownership in
                 the property, while debt tokens represent a loan to the property
