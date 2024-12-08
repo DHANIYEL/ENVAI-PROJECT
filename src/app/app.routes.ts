@@ -13,6 +13,7 @@ import { FAQsComponent } from './pages/faqs/faqs.component';
 import { FactsFiguresComponent } from './pages/facts-figures/facts-figures.component';
 
 export const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // This redirects the root path to /home
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
