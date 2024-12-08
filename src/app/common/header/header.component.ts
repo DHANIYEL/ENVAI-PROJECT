@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgIf } from '@angular/common'; // Import NgIf for *ngIf
-import { RouterModule } from '@angular/router'; // Import RouterModule for routerLink
+import { ActivatedRoute, Router, RouterModule } from '@angular/router'; // Import RouterModule for routerLink
 
 @Component({
   selector: 'app-header',
@@ -16,5 +16,12 @@ export class HeaderComponent {
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  constructor(private router: Router, private route: ActivatedRoute) {}
+
+  isActive(route: string): boolean {
+    const currentUrl = this.router.url;
+    return currentUrl.includes(route);
   }
 }
