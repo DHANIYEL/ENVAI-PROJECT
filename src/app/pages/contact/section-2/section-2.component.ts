@@ -16,6 +16,7 @@ export class Section2Component {
   personImg2 = 'assets/contacts/person-img2.png';
   personImg3 = 'assets/contacts/person-img3.png';
   personImg4 = 'assets/contacts/person-img4.png';
+  personImg5 = 'assets/contacts/person-img5.png';
 
 
   patternSvg1 = 'assets/svg/pattern1.svg'
