@@ -13,7 +13,7 @@ import { FAQsComponent } from './pages/faqs/faqs.component';
 import { FactsFiguresComponent } from './pages/facts-figures/facts-figures.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'tokens', component: TokensComponent },
