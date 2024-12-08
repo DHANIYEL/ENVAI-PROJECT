@@ -1,17 +1,23 @@
 <section class="max-w-7xl mx-auto px-4 py-6">
   <!-- Header -->
   <div class="text-center mb-4">
-    <div class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-md mb-6">
+    <div
+      class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-md mb-6"
+    >
       <span class="flex items-center gap-2">
-        <img [src]="statementImg" alt="project icon" class="rounded-lg shadow-lg max-w-md w-full grayscale" />
+        <img
+          [src]="statementImg"
+          alt="project icon"
+          class="rounded-lg shadow-lg max-w-md w-full grayscale"
+        />
         Projects
       </span>
     </div>
     <h2 class="text-5xl font-bold mb-6">Invest in our projects below</h2>
     <p class="max-w-3xl mx-auto text-gray-600">
-      Here, you can browse and select from over 100 short-term, secure and lucrative ENVAI real estate projects
-      backed
-      by assets for your safe investments.
+      Here, you can browse and select from over 100 short-term, secure and
+      lucrative ENVAI real estate projects backed by assets for your
+      safe investments.
     </p>
   </div>
 
@@ -19,37 +25,63 @@
 
   <div class="grid grid-cols-1 md:grid-cols-4 py-5 gap-8">
     <!-- Example of a single project card -->
-    <app-project-card imageUrl="assets/projects/project-img1.png" name="Office Buildings"
-      description="Modern energy-efficient offices for business demand."></app-project-card>
+    <app-project-card
+      imageUrl="assets/projects/project-img1.png"
+      name="Office Buildings"
+      description="Modern energy-efficient offices for business demand."
+    ></app-project-card>
 
-    <app-project-card imageUrl="assets/projects/project-img2.png" name="Shopping Malls"
-      description="Dynamic spaces featuring international and local brands."></app-project-card>
+    <app-project-card
+      imageUrl="assets/projects/project-img2.png"
+      name="Shopping Malls"
+      description="Dynamic spaces featuring international and local brands."
+    ></app-project-card>
 
-    <app-project-card imageUrl="assets/projects/project-img3.png" name="Hotels and Resorts"
-      description="Luxury destinations in popular tourist hotspots."></app-project-card>
+    <app-project-card
+      imageUrl="assets/projects/project-img3.png"
+      name="Hotels and Resorts"
+      description="Luxury destinations in popular tourist hotspots."
+    ></app-project-card>
 
-    <app-project-card imageUrl="assets/projects/project-img4.png" name="Industrial Parks"
-      description="Strategic hubs supporting manufacturing and logistics."></app-project-card>
+    <app-project-card
+      imageUrl="assets/projects/project-img4.png"
+      name="Industrial Parks"
+      description="Strategic hubs supporting manufacturing and logistics."
+    ></app-project-card>
 
-    <app-project-card imageUrl="assets/projects/project-img5.png" name="Apartments"
-      description="Stable rental income with appreciation and tax benefits."></app-project-card>
+    <app-project-card
+      imageUrl="assets/projects/project-img5.png"
+      name="Apartments"
+      description="Stable rental income with appreciation and tax benefits."
+    ></app-project-card>
 
-    <app-project-card imageUrl="assets/projects/project-img6.png" name="Mixed-use"
-      description="Spaces combining residential, commercial, and retail."></app-project-card>
+    <app-project-card
+      imageUrl="assets/projects/project-img6.png"
+      name="Mixed-use"
+      description="Spaces combining residential, commercial, and retail."
+    ></app-project-card>
 
-    <app-project-card imageUrl="assets/projects/project-img7.png" name="Airports"
-      description="Renovation planned for Bangui M'Poko International Airport."></app-project-card>
+    <app-project-card
+      imageUrl="assets/projects/project-img7.png"
+      name="Airports"
+      description="Renovation planned for Bangui M'Poko International Airport."
+    ></app-project-card>
 
-    <app-project-card imageUrl="assets/projects/project-img8.png" name="Data Centers"
-      description="High-demand hubs powering the digital economy."></app-project-card>
+    <app-project-card
+      imageUrl="assets/projects/project-img8.png"
+      name="Data Centers"
+      description="High-demand hubs powering the digital economy."
+    ></app-project-card>
   </div>
-
 
   <!-- View All Button -->
   <div class="flex justify-center my-10">
-    <button class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors"
-      [routerLink]="'projects'">
-      View All
-    </button>
+    <a href="/projects">
+      <button
+        class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors"
+      >
+        View All
+      </button>
+    </a>
   </div>
 </section>
