@@ -4,12 +4,12 @@
 
 
 /* Use Raleway for general text and subheadings */
-body, p, span, h2, h3, h4, h5, h6, li, ul {
+body, p, span, li, ul {
   font-family: 'Raleway', sans-serif;
 }
 
 /* Use Space Grotesk for main headings */
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700; /* Adjust weight as needed */
 }
