@@ -11,6 +11,9 @@ export class Section2Component {
 
   buildingIcon = 'assets/icon/building.svg'
 
+  rightArrowIcon = 'assets/icon/right-arrow.svg';
+
+
   projectImg1 = 'assets/projects/project-img1.png'
   projectImg2 = 'assets/projects/project-img2.png'
   projectImg3 = 'assets/projects/project-img3.png'
