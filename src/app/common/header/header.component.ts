@@ -14,8 +14,14 @@ export class HeaderComponent {
 
   isMenuOpen = false;
 
+  // Method to toggle the menu visibility
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  // Method to close the menu when a link is clicked
+  closeMenu(): void {
+    this.isMenuOpen = false;
   }
 
   constructor(private router: Router, private route: ActivatedRoute) {}

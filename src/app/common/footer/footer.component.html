@@ -4,10 +4,10 @@
     <div class="space-y-4">
       <h3 class="font-semibold text-lg">Investing</h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="/projects" class="hover:text-blue-100">Projects</a></li>
-        <li><a href="/tokens" class="hover:text-blue-100">Tokens</a></li>
-        <li><a href="/investment-rules" class="hover:text-blue-100">Investment Rules</a></li>
-        <li><a href="/home" class="hover:text-blue-100">How It Works</a></li>
+        <li><a routerLink="/projects" class="hover:text-blue-100">Projects</a></li>
+        <li><a routerLink="/tokens" class="hover:text-blue-100">Tokens</a></li>
+        <li><a routerLink="/investment-rules" class="hover:text-blue-100">Investment Rules</a></li>
+        <li><a routerLink="/home" class="hover:text-blue-100">How It Works</a></li>
       </ul>
     </div>
 
@@ -15,10 +15,10 @@
     <div class="space-y-4">
       <h3 class="font-semibold text-lg">Company</h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="/about" class="hover:text-blue-100">About Us</a></li>
-        <li><a href="/facts-figures" class="hover:text-blue-100">Facts And Figures</a></li>
-        <li><a href="/contact-us" class="hover:text-blue-100">Contact Us</a></li>
-        <li><a href="/invest" class="hover:text-blue-100">Investments</a></li>
+        <li><a routerLink="/about" class="hover:text-blue-100">About Us</a></li>
+        <li><a routerLink="/facts-figures" class="hover:text-blue-100">Facts And Figures</a></li>
+        <li><a routerLink="/contact-us" class="hover:text-blue-100">Contact Us</a></li>
+        <li><a routerLink="/invest" class="hover:text-blue-100">Investments</a></li>
       </ul>
     </div>
 
@@ -26,12 +26,13 @@
     <div class="space-y-4">
       <h3 class="font-semibold text-lg">Legal</h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="/privacy-policy" class="hover:text-blue-100">Privacy Policy</a></li>
-        <li><a href="/faqs" class="hover:text-blue-100">FAQs</a></li>
-        <li><a href="/terms" class="hover:text-blue-100">Terms</a></li>
-        <li><a href="/risk-statement" class="hover:text-blue-100">Risk Statement</a></li>
+        <li><a routerLink="/privacy-policy" class="hover:text-blue-100">Privacy Policy</a></li>
+        <li><a routerLink="/faqs" class="hover:text-blue-100">FAQs</a></li>
+        <li><a routerLink="/terms" class="hover:text-blue-100">Terms</a></li>
+        <li><a routerLink="/risk-statement" class="hover:text-blue-100">Risk Statement</a></li>
       </ul>
     </div>
+
 
     <!-- Contact Section -->
     <div class="space-y-4">
@@ -51,7 +52,7 @@
       <p class="text-sm">
         Discover the opportunity for short-term, secure, and rewarding asset-backed real estate Projects investments!
       </p>
-      <a href="/home">
+      <a routerLink="/">
         <img
           [src]="footerLogo"
           alt="ENVAI Logo"
@@ -61,5 +62,4 @@
     </div>
     <p class="text-xs min-w-max">©2024 Envai Investments. All rights reserved.</p>
   </div>
-
 </footer>
