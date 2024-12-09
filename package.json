@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
     "@emailjs/browser": "^4.4.1",
+    "@nguniversal/express-engine": "^16.2.0",
     "envai-project": "file:",
     "react-icons": "^5.4.0",
     "rxjs": "~7.8.0",
