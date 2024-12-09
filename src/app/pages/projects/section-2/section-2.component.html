@@ -1,7 +1,5 @@
 <section class="bg-dark mb-16">
   <div class="max-w-7xl mx-auto px-4 py-16 relative">
-
-
     <!-- Header -->
     <div class="text-center mb-16 flex justify-center items-center flex-col">
       <div
@@ -11,16 +9,15 @@
         <p class="text-gray-800">Projects</p>
       </div>
       <h2 class="text-4xl font-bold mb-4">Types of Projects</h2>
-      <p class="text-gray-600  max-w-md">
+      <p class="text-gray-600 max-w-md">
         ENVAI offers a variety of project types in real estate and buildings
       </p>
     </div>
 
     <!-- Project Types -->
-    <div class="space-y-24 ">
+    <div class="space-y-24">
       <!-- Office Buildings -->
-      <div class="grid grid-cols-1 relative  md:grid-cols-2 gap-8 items-center">
-
+      <div class="grid grid-cols-1 relative md:grid-cols-2 gap-8 items-center">
         <div class="space-y-6 z-50">
           <div class="flex items-start gap-3 flex-col z-50">
             <div class="p-2 bg-[#9FF485] rounded-lg">
@@ -32,15 +29,14 @@
             Modern, energy-efficient office buildings are being developed to
             cater to the growing demand from local and international businesses.
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
 
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
         <div class="relative h-[400px] rounded-xl overflow-hidden">
           <img
@@ -52,7 +48,9 @@
       </div>
 
       <!-- Shopping Malls -->
-      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
+      <div
+        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
+      >
         <div
           class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
         >
@@ -73,19 +71,19 @@
             Large-scale shopping malls with a mix of international and local
             brands are being built in major cities and tourist destinations.
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
       </div>
 
-
-      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
+      <div
+        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
+      >
         <div class="space-y-6">
           <div class="flex items-start gap-3 flex-col">
             <div class="p-2 bg-[#FFD70080] rounded-lg">
@@ -97,14 +95,13 @@
             Luxury hotels and resorts are being constructed in popular tourist
             destinations
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
         <div class="relative h-[400px] rounded-xl overflow-hidden">
           <img
@@ -116,7 +113,9 @@
       </div>
 
       <!-- Shopping Malls -->
-      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
+      <div
+        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
+      >
         <div
           class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
         >
@@ -139,19 +138,19 @@
             Strategic industrial parks and warehouses are being developed to
             support the growing manufacturing and logistics sectors.
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
       </div>
 
-
-      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
+      <div
+        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
+      >
         <div class="space-y-6">
           <div class="flex items-start gap-3 flex-col">
             <div class="p-2 bg-[#9FF485] rounded-lg">
@@ -164,14 +163,13 @@
             offering stable rental income, potential for appreciation, and tax
             benefits.
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
         <div class="relative h-[400px] rounded-xl overflow-hidden">
           <img
@@ -183,7 +181,9 @@
       </div>
 
       <!-- Shopping Malls -->
-      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
+      <div
+        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
+      >
         <div
           class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
         >
@@ -204,17 +204,18 @@
             Developments combine residential, commercial, and retail components
             and offer diverse amenities and services
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
       </div>
-      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
+      <div
+        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
+      >
         <div class="space-y-6">
           <div class="flex items-start gap-3 flex-col">
             <div class="p-2 bg-[#9FF485] rounded-lg">
@@ -227,14 +228,13 @@
             northwest of Bangui, the capital of the Central African Republic. It
             is slated for renovation.
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
         <div class="relative h-[400px] rounded-xl overflow-hidden">
           <img
@@ -246,7 +246,9 @@
       </div>
 
       <!-- Shopping Malls -->
-      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
+      <div
+        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
+      >
         <div
           class="relative h-[400px] rounded-xl overflow-hidden order-2 md:order-1"
         >
@@ -269,17 +271,18 @@
             processing power, exposure to the rapidly growing digital economy,
             and the potential for diversification in an investment portfolio.
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
       </div>
-      <div class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center">
+      <div
+        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
+      >
         <div class="space-y-6">
           <div class="flex items-start gap-3 flex-col">
             <div class="p-2 bg-[#9FF485] rounded-lg">
@@ -291,14 +294,13 @@
             These include all-inclusive resorts, boutique hotels, wellness
             retreats, golf resorts, and historical and cultural resorts.
           </p>
-          <a href="/invest" class="flex">
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
-            <img [src]="rightArrowIcon" alt="right arrow icon">
-              <span>Invest</span>
-            </button>
-          </a>
+          <button
+            [routerLink]="'/invest'"
+            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+          >
+            <img [src]="rightArrowIcon" alt="right arrow icon" />
+            <span>Invest</span>
+          </button>
         </div>
         <div class="relative h-[400px] rounded-xl overflow-hidden">
           <img

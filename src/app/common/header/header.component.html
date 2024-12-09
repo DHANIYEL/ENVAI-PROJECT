@@ -16,36 +16,33 @@
     <!-- Desktop Navigation Links -->
     <div class="hidden md:flex items-center gap-8">
       <a
-        routerLink=""
-        [class.font-bold]="isActive('')"
+        routerLink="/"
+        routerLinkActive="font-bold"
         class="text-white hover:text-white/80 cursor-pointer"
-        >Home</a
-      >
+        [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a>
       <a
-        routerLink="about"
-        [class.font-bold]="isActive('about')"
+        routerLink="/about"
+        routerLinkActive="font-bold"
         class="text-white hover:text-white/80 cursor-pointer"
-        >About</a
-      >
+      >About</a>
       <a
-        routerLink="projects"
-        [class.font-bold]="isActive('projects')"
+        routerLink="/projects"
+        routerLinkActive="font-bold"
         class="text-white hover:text-white/80 cursor-pointer"
-        >Projects</a
-      >
+      >Projects</a>
       <a
-        routerLink="tokens"
-        [class.font-bold]="isActive('tokens')"
+        routerLink="/tokens"
+        routerLinkActive="font-bold"
         class="text-white hover:text-white/80 cursor-pointer"
-        >Tokens</a
-      >
+      >Tokens</a>
       <a
-        routerLink="investment-rules"
-        [class.font-bold]="isActive('investment-rules')"
+        routerLink="/investment-rules"
+        routerLinkActive="font-bold"
         class="text-white hover:text-white/80 cursor-pointer"
-        >Investment Rules</a
-      >
+      >Investment Rules</a>
     </div>
+
 
     <!-- Contact Button (Desktop) -->
     <div class="flex gap-3">
