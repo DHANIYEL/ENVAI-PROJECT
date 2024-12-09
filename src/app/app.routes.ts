@@ -14,6 +14,7 @@ import { FactsFiguresComponent } from './pages/facts-figures/facts-figures.compo
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: '**', redirectTo: '' }, // Catch-all route
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'tokens', component: TokensComponent },
