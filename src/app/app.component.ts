@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -13,15 +14,26 @@ import { NgIf } from '@angular/common';
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
+    FormsModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  {
+export class AppComponent implements OnInit {
   title = 'ENVAI-PROJECT';
 
   showScrollToTop: boolean = false;
 
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    // Scroll to the top on route change
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
 
   @HostListener('window:scroll', ['$event'])
   checkScrollPosition() {
