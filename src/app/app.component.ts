@@ -17,21 +17,11 @@ import { NgIf } from '@angular/common';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
   title = 'ENVAI-PROJECT';
 
   showScrollToTop: boolean = false;
 
-  constructor(private router: Router) {}
-
-  ngOnInit() {
-    // Scroll to the top on route change
-    this.router.events.subscribe((event: Event) => {
-      if (event instanceof NavigationEnd) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    });
-  }
 
   @HostListener('window:scroll', ['$event'])
   checkScrollPosition() {
