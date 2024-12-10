@@ -13,6 +13,7 @@ export class HeaderComponent {
   navLogo = 'assets/logo/LOGO-WHITE.png';
 
   isMenuOpen = false;
+  isDropdownOpen = false; // State for dropdown visibility
 
   // Method to toggle the menu visibility
   toggleMenu(): void {
@@ -24,8 +25,14 @@ export class HeaderComponent {
     this.isMenuOpen = false;
   }
 
+  // Method to toggle the dropdown visibility
+  toggleDropdown(): void {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
   constructor(private router: Router, private route: ActivatedRoute) {}
 
+  // Check if the route is active
   isActive(route: string): boolean {
     const currentUrl = this.router.url;
     return currentUrl.includes(route);
