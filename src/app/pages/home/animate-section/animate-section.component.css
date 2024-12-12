@@ -1,0 +1,36 @@
+.full-width-media .media {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+
+@media(min-width: 45rem) {
+  .full-width-media .media {
+      aspect-ratio:16/9;
+  }
+}
+
+.full-width-media .tall-fallback {
+  aspect-ratio: 3/4
+}
+
+@media(min-width: calc(45rem + 1px)) {
+  .full-width-media .tall-fallback {
+      display:none
+  }
+}
+
+.full-width-media .wide-fallback {
+  aspect-ratio: 16/9
+}
+
+@media(max-width: calc(45rem - 1px)) {
+  .full-width-media .wide-fallback {
+      display:none
+  }
+}
+
+img, video {
+    height: auto;
+    max-width: 100%;
+}

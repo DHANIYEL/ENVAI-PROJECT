@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BannerSectionComponent } from './banner-section/banner-section.component';
+import { AnimateSectionComponent } from './animate-section/animate-section.component';
 import { Section2Component } from './section-2/section-2.component';
 import { Section3Component } from './section-3/section-3.component';
 import { Section4Component } from './section-4/section-4.component';
@@ -11,6 +12,7 @@ import { Section6Component } from './section-6/section-6.component';
   standalone: true,
   imports: [
     BannerSectionComponent,
+    AnimateSectionComponent,
     Section2Component,
     Section3Component,
     Section4Component,
@@ -19,6 +21,7 @@ import { Section6Component } from './section-6/section-6.component';
   ],
   template: `
     <app-banner-section></app-banner-section>
+    <app-animate-section></app-animate-section>
     <app-section-2></app-section-2>
     <app-section-3></app-section-3>
     <app-section-4></app-section-4>
