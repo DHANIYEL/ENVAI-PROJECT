@@ -1,72 +1,112 @@
 <div class="max-w-7xl mx-auto max-md:px-4">
-  <div class="absolute left-32 transform -translate-x-20 translate-y-72 max-md:hidden">
-    <img [src]="patternLeftSvg" alt="Decorative Left SVG" class="w-auto h-auto" />
+  <div
+    class="absolute left-32 transform -translate-x-20 translate-y-72 max-md:hidden"
+  >
+    <img
+      [src]="patternLeftSvg"
+      alt="Decorative Left SVG"
+      class="w-auto h-auto"
+    />
   </div>
   <!-- Hero Section -->
-  <div class="relative h-[400px] w-full ">
+  <div class="relative h-[400px] w-full">
     <div class="absolute inset-0 shadow-lg">
-      <img [src]="bannerImg" alt="Heroes Square" class="w-full h-full shadow-lg object-cover rounded-lg" />
+      <img
+        [src]="bannerImg"
+        alt="Heroes Square"
+        class="w-full h-full shadow-lg object-cover rounded-lg"
+      />
       <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
     </div>
-    <div class="relative h-full flex items-center justify-center ">
+    <div class="relative h-full flex items-center justify-center">
       <h1 class="text-5xl font-bold text-white">About Us</h1>
     </div>
   </div>
 
   <!-- Content Section -->
   <div class="max-w-7xl mx-auto py-16 space-y-20 max-md:space-y-5">
-    <div class="absolute right-20 transform -translate-x-24 translate-y-0 max-md:translate-y-0">
-      <img [src]="patternRightSvg" alt="Decorative Right SVG" class="w-auto h-auto" />
+    <div
+      class="absolute right-20 transform -translate-x-24 translate-y-0 max-md:translate-y-0"
+    >
+      <img
+        [src]="patternRightSvg"
+        alt="Decorative Right SVG"
+        class="w-auto h-auto"
+      />
     </div>
 
-    <div class="absolute left-32 transform -translate-x-0 translate-y-72 max-md:hidden">
-      <img [src]="patternLeftSvg" alt="Decorative Left SVG" class="w-auto h-auto" />
+    <div
+      class="absolute left-32 transform -translate-x-0 translate-y-72 max-md:hidden"
+    >
+      <img
+        [src]="patternLeftSvg"
+        alt="Decorative Left SVG"
+        class="w-auto h-auto"
+      />
     </div>
     <!-- Who Are We Section -->
-    <div class="flex flex-col-reverse md:flex-row-reverse md:gap-8 items-center">
-      <div class="h-[400px] w-full flex justify-center items-center z-40 shadow-lg rounded-lg">
-        <img [src]="sideImg1" alt="Digital Network" class="w-full h-fit object-contain shadow-2xl rounded-lg" />
-      </div>
-      <div class="space-y-6 z-50 max-w-2xl">
-        <div class="flex max-md:justify-center">
+    <div class="flex flex-col md:flex-row gap-8 items-center relative z-10">
+      <!-- Text Section -->
+      <div class="space-y-6 max-w-2xl w-full">
+        <div class="flex justify-center md:justify-start">
           <div class="flex items-center px-4 py-2 rounded-full shadow-md">
             <img [src]="originIcon" alt="process Icon" class="w-5 h-5 mr-2" />
             <p class="text-gray-800">Origin</p>
           </div>
         </div>
-        <h3 class="text-3xl font-bold text-gray-900">Who Are We?</h3>
+        <h3 class="text-3xl font-bold text-gray-900 text-center md:text-left">
+          Who Are We?
+        </h3>
         <p class="text-gray-600 leading-relaxed font-semibold">
-          ENVAİ is a blockchain investment platform created by international companies, project owners, and professional
-          managers who have been active in the global investment markets for over 30 years. It offers secure, lucrative,
-          and transparent asset-backed investment opportunities for small, medium, and large investors.
+          ENVAİ is a blockchain investment platform created by international
+          companies, project owners, and professional managers who have been
+          active in the global investment markets for over 30 years. It offers
+          secure, lucrative, and transparent asset-backed investment
+          opportunities for small, medium, and large investors.
         </p>
       </div>
-
+      <!-- Image Section -->
+      <div class="h-[400px] flex justify-center items-center w-full">
+        <img
+          [src]="sideImg1"
+          alt="Digital Network"
+          class="object-contain h-fit w-fit shadow-2xl rounded-lg"
+        />
+      </div>
     </div>
 
     <!-- What We Do Section -->
-    <div class="flex flex-col-reverse md:flex-row md:gap-8 items-center">
+    <div
+      class="flex flex-col-reverse md:flex-row gap-8 items-center relative z-10"
+    >
       <!-- Image Section -->
-      <div class="h-[400px] flex justify-center items-center z-40 shadow-lg rounded-lg w-fit">
-        <img [src]="sideImg2" alt="Modern Interior" class="w-full h-fit shadow-2xl object-contain rounded-lg" />
+      <div class="h-[400px] flex justify-center items-center w-full">
+        <img
+          [src]="sideImg2"
+          alt="Modern Interior"
+          class="object-contain shadow-2xl rounded-lg"
+        />
       </div>
 
       <!-- Text Section -->
-      <div class="space-y-6 z-50 w-full max-w-2xl">
-        <div class="flex max-md:justify-center">
+      <div class="space-y-6 max-w-2xl w-full">
+        <div class="flex justify-center md:justify-start">
           <div class="flex items-center px-4 py-2 rounded-full shadow-md">
             <img [src]="progressIcon" alt="process Icon" class="w-5 h-5 mr-2" />
             <p class="text-gray-800">Progress</p>
           </div>
         </div>
-        <h3 class="text-3xl font-bold text-gray-900">What We Do?</h3>
+        <h3 class="text-3xl font-bold text-gray-900 text-center md:text-left">
+          What We Do?
+        </h3>
         <p class="text-gray-600 leading-relaxed font-semibold">
-          ENVAI has identified and approved over 100 asset-backed investment real estate projects currently under
-          construction. These projects are available to investors seeking exposure to alternative assets with the added
-          benefits and convenience of tokenization and blockchain technologies.
+          ENVAI has identified and approved over 100 asset-backed investment
+          real estate projects currently under construction. These projects are
+          available to investors seeking exposure to alternative assets with the
+          added benefits and convenience of tokenization and blockchain
+          technologies.
         </p>
       </div>
     </div>
-
   </div>
 </div>
