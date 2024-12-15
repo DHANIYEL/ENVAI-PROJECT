@@ -26,10 +26,10 @@ export class Section2Component {
   patternSvg3 = 'assets/svg/pattern3.svg'
   patternSvg4 = 'assets/svg/pattern4.svg'
 
-  tokenImg5 = 'assets/tokens/token-img5.jpg'
-  tokenImg6 = 'assets/tokens/token-img6.jpg'
-  tokenImg7 = 'assets/tokens/token-img7.jpg'
-  tokenImg8 = 'assets/tokens/token-img8.jpg'
-  tokenImg9 = 'assets/tokens/token-img9.jpg'
-  tokenImg10 = 'assets/tokens/token-img10.jpg'
+  tokenImg5 = 'assets/tokens/token-img5-1.png'
+  tokenImg6 = 'assets/tokens/token-img6-1.png'
+  tokenImg7 = 'assets/tokens/token-img7-1.png'
+  tokenImg8 = 'assets/tokens/token-img8-1.png'
+  tokenImg9 = 'assets/tokens/token-img9-1.png'
+  tokenImg10 = 'assets/tokens/token-img10-1.png'
 }

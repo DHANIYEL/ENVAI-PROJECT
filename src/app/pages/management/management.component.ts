@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { Section1Component } from "./section-1/section-1.component";
+import { Section2Component } from "./section-2/section-2.component";
 import { JoinSectionComponent } from "../../common/join-section/join-section.component";
 import { NewsletterComponent } from "../../common/newsletter/newsletter.component";
-import { Section5Component } from "../home/section-5/section-5.component";
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-management',
   standalone: true,
-  imports: [Section1Component, JoinSectionComponent, NewsletterComponent, Section5Component],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  imports: [Section1Component, Section2Component, JoinSectionComponent, NewsletterComponent],
+  templateUrl: './management.component.html',
+  styleUrl: './management.component.css'
 })
-export class ContactComponent {
+export class ManagementComponent {
 
 }

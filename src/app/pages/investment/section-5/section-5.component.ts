@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class Section5Component {
   investmentIcon6 = 'assets/icon/investment-icon6.svg';
 
-  projectImg1 = 'assets/investment-rule/PROSPECTUS].jpg'
+  projectImg1 = 'assets/investment-rule/PROSPECTUS]-1.png'
 
 
   patternSvg1 = 'assets/svg/pattern1.svg'

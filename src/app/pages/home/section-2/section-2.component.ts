@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 })
 export class Section2Component {
   statementImg = 'assets/home/statement-img.png';
-  aboutImg = 'assets/home/about-img.png';
+  aboutImg = 'assets/home/about-img-1.png';
 
   pencilIcon = 'assets/icon/pencil.svg';
   aboutIcon = 'assets/icon/about.svg';

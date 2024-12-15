@@ -19,7 +19,7 @@ export class Section4Component {
   patternSvg3 = 'assets/svg/pattern3.svg'
   patternSvg4 = 'assets/svg/pattern4.svg'
 
-  projectImg1 = 'assets/investment-rule/PROCESS.jpg'
-  projectImg2 = 'assets/investment-rule/BENEFITS-SMART-CONTRACT.jpg'
-  projectImg3 = 'assets/investment-rule/LEVARAGING-SMART-CONTRACTS.jpg'
+  projectImg1 = 'assets/investment-rule/PROCESS-1.png'
+  projectImg2 = 'assets/investment-rule/BENEFITS-SMART-CONTRACT-1.png'
+  projectImg3 = 'assets/investment-rule/LEVARAGING-SMART-CONTRACTS-1.png'
 }

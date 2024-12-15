@@ -11,11 +11,13 @@ import { TermsComponent } from './pages/terms/terms.component';
 import { RiskStatementComponent } from './pages/risk-statement/risk-statement.component';
 import { FAQsComponent } from './pages/faqs/faqs.component';
 import { FactsFiguresComponent } from './pages/facts-figures/facts-figures.component';
+import { ManagementComponent } from './pages/management/management.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   // { path: '**', redirectTo: '' }, // Catch-all route
-  { path: 'about', component: AboutComponent },
+  { path: 'about-us', component: AboutComponent },
+  { path: 'management', component: ManagementComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'tokens', component: TokensComponent },
   { path: 'investment-rules', component: InvestmentComponent },

@@ -9,14 +9,18 @@ import { Component } from '@angular/core';
 })
 export class Section2Component {
 
-  ivestmentIcon1 = 'assets/icon/investment-icon1.svg'
-  ivestmentIcon2 = 'assets/icon/investment-icon2.svg'
+  managementIcon = 'assets/icon/management.svg'
+
+
+  personImg1 = 'assets/contacts/person-img1.png';
+  personImg2 = 'assets/contacts/person-img2.png';
+  personImg3 = 'assets/contacts/person-img3.png';
+  personImg4 = 'assets/contacts/person-img4.png';
+  personImg5 = 'assets/contacts/person-img5.png';
+
 
   patternSvg1 = 'assets/svg/pattern1.svg'
   patternSvg2 = 'assets/svg/pattern2.svg'
   patternSvg3 = 'assets/svg/pattern3.svg'
   patternSvg4 = 'assets/svg/pattern4.svg'
-
-  projectImg1 = 'assets/investment-rule/how it works-1.png'
-  projectImg2 = 'assets/investment-rule/benfits-of-tokenised-1.png'
 }
