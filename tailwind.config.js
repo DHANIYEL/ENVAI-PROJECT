@@ -13,7 +13,7 @@ module.exports = {
         black: '#000000',
       },
       screens: {
-        '1340px': '1340px',
+        '1310px': '1310px',
         '1130px': '1130px',
       },
     },
