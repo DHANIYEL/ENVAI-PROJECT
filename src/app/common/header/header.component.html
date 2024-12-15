@@ -24,9 +24,9 @@
         <a routerLink="/projects" routerLinkActive="font-bold"
           class="text-white hover:text-white/80 cursor-pointer">Projects</a>
         <a routerLink="/tokens" routerLinkActive="font-bold"
-          class="text-white hover:text-white/80 cursor-pointer hidden lg:flex">Tokens</a>
+          class="text-white hover:text-white/80 cursor-pointer hidden 1340px:flex">Tokens</a>
         <a routerLink="/investment-rules" routerLinkActive="font-bold"
-          class="text-white hover:text-white/80 cursor-pointer hidden lg:flex">Investment Rules</a>
+          class="text-white hover:text-white/80 cursor-pointer hidden 1340px:flex">Investment Rules</a>
       </div>
 
       <!-- Contact and Invest Buttons / Dropdown -->
@@ -35,7 +35,7 @@
 
 
         <!-- Buttons (Visible only above lg) -->
-        <div class="hidden lg:flex gap-3">
+        <div class="hidden 1130px:flex gap-3">
           <a routerLink="contact-us">
             <button
               class="bg-white text-primary px-6 py-2 rounded-md font-medium hover:cursor-pointer transition-all duration-300 ease-in-out hover:translate-y-[-4px] hover:shadow-2xl">
@@ -52,7 +52,7 @@
       </div>
 
       <!-- Mobile Menu Button -->
-      <button class="lg:hidden text-white" (click)="toggleMenu()">
+      <button class="1130px:hidden text-white" (click)="toggleMenu()">
         <svg *ngIf="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
           stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />

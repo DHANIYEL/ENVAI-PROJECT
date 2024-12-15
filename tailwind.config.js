@@ -14,6 +14,7 @@ module.exports = {
       },
       screens: {
         '1340px': '1340px',
+        '1130px': '1130px',
       },
     },
   },
