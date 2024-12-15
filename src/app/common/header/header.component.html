@@ -68,7 +68,7 @@
 </div>
 
 <!-- Mobile Menu Overlay -->
-<div *ngIf="isMenuOpen" class="fixed inset-0 bg-primary z-[999] flex flex-col items-center justify-start py-20">
+<div *ngIf="isMenuOpen" class="fixed inset-0 bg-primary z-[999] flex flex-col items-center justify-start py-20 overflow-y-auto">
   <!-- Add this just before the mobile navigation links -->
   <div class="w-10/12 max-w-md mb-8 relative z-10">
     <div class="relative">
@@ -141,17 +141,17 @@
       (click)="closeMenu()">
       Contact Us
     </button>
+    <!-- Mobile Logo -->
+    <div class="mt-10">
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 cursor-pointer">
+          <a routerLink="/" (click)="closeMenu()">
+            <img [src]="navLogo" alt="nav white logo" class="w-40" />
+          </a>
+        </div>
+      </div>
+    </div>
   </a>
 
 
-  <!-- Mobile Logo -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-    <div class="flex items-center gap-2">
-      <div class="flex items-center gap-2 cursor-pointer">
-        <a routerLink="/" (click)="closeMenu()">
-          <img [src]="navLogo" alt="nav white logo" class="w-40" />
-        </a>
-      </div>
-    </div>
-  </div>
 </div>
