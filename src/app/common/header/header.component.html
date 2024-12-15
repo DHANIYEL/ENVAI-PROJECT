@@ -3,7 +3,7 @@
   <!-- Adjust height as per your navbar's height -->
 
   <nav
-    class="fixed top-6 left-0 right-0 z-[999] bg-primary p-[1.35rem] rounded-lg max-w-5xl max-md:rounded-none max-md:top-0 mx-auto max-lg:mx-4 max-md:mx-0">
+    class="fixed top-6 left-0 right-0 z-[999] bg-primary p-[1.35rem] rounded-lg max-w-6xl max-md:rounded-none max-md:top-0 mx-auto max-lg:mx-4 max-md:mx-0">
     <div class="flex items-center justify-between">
       <!-- Logo Section -->
       <div class="flex items-center gap-2">
@@ -152,14 +152,15 @@
   <!-- Mobile Navigation Links -->
   <div *ngIf="isMenuOpen" class="flex flex-col items-center gap-8 text-center">
     <a routerLink="/" class="text-white text-2xl hover:text-white/80" (click)="closeMenu()">Home</a>
-    <a routerLink="/about" class="text-white text-2xl hover:text-white/80" (click)="closeMenu()">About</a>
+    <a routerLink="/about-us" class="text-white text-2xl hover:text-white/80" (click)="closeMenu()">About Us</a>
+    <a routerLink="/management" class="text-white text-2xl hover:text-white/80" (click)="closeMenu()">Management</a>
     <a routerLink="/projects" class="text-white text-2xl hover:text-white/80" (click)="closeMenu()">Projects</a>
     <a routerLink="/tokens" class="text-white text-2xl hover:text-white/80" (click)="closeMenu()">Tokens</a>
     <a routerLink="/investment-rules" class="text-white text-2xl hover:text-white/80" (click)="closeMenu()">Investment
       Rules</a>
     <a routerLink="/invest"
       class="text-primary bg-white hover:bg-gray-200 px-4 font-medium rounded-md py-2 cursor-pointer"
-      (click)="closeMenu()">Invest In ENVAI</a>
+      (click)="closeMenu()">Invest</a>
   </div>
 
   <!-- Contact Button -->
