@@ -12,8 +12,8 @@ export class Section1Component {
   bannerImg = 'assets/about/about-banner.jpg'
 
 
-  sideImg1 = 'assets/about/img-1.png'
-  sideImg2 = 'assets/about/img-2.png'
+  sideImg1 = 'assets/about/img-1-1.png'
+  sideImg2 = 'assets/about/img-2-1.png'
 
   originIcon = 'assets/icon/origin.svg'
   progressIcon = 'assets/icon/progress.svg'

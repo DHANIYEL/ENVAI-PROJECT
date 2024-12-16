@@ -15,14 +15,15 @@ export class Section2Component {
   rightArrowIcon = 'assets/icon/right-arrow.svg';
 
 
-  projectImg1 = 'assets/projects/project-img1.png'
-  projectImg2 = 'assets/projects/project-img2.png'
-  projectImg3 = 'assets/projects/project-img3.png'
-  projectImg4 = 'assets/projects/project-img4.png'
-  projectImg5 = 'assets/projects/project-img5.png'
-  projectImg6 = 'assets/projects/project-img6.png'
-  projectImg7 = 'assets/projects/project-img7.png'
-  projectImg8 = 'assets/projects/project-img8.png'
+  projectImg1 = 'assets/projects/project-img1-1.png'
+  projectImg2 = 'assets/projects/project-img2-1.png'
+  projectImg3 = 'assets/projects/project-img3-1.png'
+  projectImg4 = 'assets/projects/project-img4-1.png'
+  projectImg5 = 'assets/projects/project-img5-1.png'
+  projectImg6 = 'assets/projects/project-img6-1.png'
+  projectImg7 = 'assets/projects/project-img7-1.png'
+  projectImg8 = 'assets/projects/project-img8-1.png'
+  projectImg9 = 'assets/projects/project-img9-1.png'
 
   patternSvg1 = 'assets/svg/pattern1.svg'
   patternSvg2 = 'assets/svg/pattern2.svg'

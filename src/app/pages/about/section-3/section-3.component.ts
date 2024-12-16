@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './section-3.component.css',
 })
 export class Section3Component {
-  sideImg3 = 'assets/about/img-3.png';
-  sideImg4 = 'assets/about/img-4.png';
+  sideImg3 = 'assets/about/img-3-1.png';
+  sideImg4 = 'assets/about/img-4-1.png';
   earthIcon = 'assets/icon/earth.svg';
   purposeIcon = 'assets/icon/purpose.svg';
 }
