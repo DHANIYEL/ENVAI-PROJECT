@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './section-1.component.css'
 })
 export class Section1Component {
-  bannerImg = 'assets/tokens/token-banner.jpeg';
+  bannerImg = 'assets/tokens/USECASES-1.jpg';
 
   securityIcon = 'assets/icon/security.svg'
 
