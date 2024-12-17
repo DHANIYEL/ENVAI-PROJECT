@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AnimateSectionComponent {
 
-  animatedScreenVideo = 'assets/home/animate-video-2.mp4';
+  animateEnvaiVideo = 'assets/home/envai.mp4'
 
-  animatedVideo = 'assets/home/animate-video.mp4'
 }
