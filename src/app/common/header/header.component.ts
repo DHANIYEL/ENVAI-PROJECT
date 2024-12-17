@@ -23,6 +23,7 @@ export class HeaderComponent {
     { name: 'About', path: '/about' },
     { name: 'Projects', path: '/projects' },
     { name: 'Tokens', path: '/tokens' },
+    { name: 'Management', path: '/management' },
     { name: 'Investment', path: '/investment-rules' },
     { name: 'Invest', path: '/invest' },
     { name: 'Contact', path: '/contact-us' },
