@@ -19,15 +19,8 @@ import { Section6Component } from './section-6/section-6.component';
     Section5Component,
     Section6Component,
   ],
-  template: `
-    <app-banner-section></app-banner-section>
-    <app-animate-section></app-animate-section>
-    <app-section-2></app-section-2>
-    <app-section-3></app-section-3>
-    <app-section-4></app-section-4>
-    <app-section-5></app-section-5>
-    <app-section-6></app-section-6>
-  `,
+  templateUrl: './home.component.html',
+
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
