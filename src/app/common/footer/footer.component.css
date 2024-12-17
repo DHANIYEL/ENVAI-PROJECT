@@ -1,3 +1,15 @@
 p {
   font-weight: 600;
 }
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  vertical-align: middle;
+}
+
+.flex {
+  margin: 0;
+  padding: 0;
+}
+

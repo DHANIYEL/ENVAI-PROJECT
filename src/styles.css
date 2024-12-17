@@ -27,3 +27,12 @@ h1, h2, h3, h4, h5, h6 {
 
   }
 }
+
+/* Global Resets */
+body {
+  margin: 0;
+  padding: env(safe-area-inset-top, 0)
+           env(safe-area-inset-right, 0)
+           env(safe-area-inset-bottom, 0)
+           env(safe-area-inset-left, 0);
+}
