@@ -68,7 +68,7 @@
 </div>
 
 <!-- Mobile Menu Overlay -->
-<div *ngIf="isMenuOpen" class="fixed inset-0 bg-primary z-[999] flex flex-col items-center justify-start py-20 overflow-y-auto">
+<div *ngIf="isMenuOpen" class="fixed inset-0 bg-primary z-[999] flex flex-col items-center justify-start sm:justify-around py-20 overflow-y-auto">
   <!-- Add this just before the mobile navigation links -->
   <div class="w-10/12 max-w-md mb-8 relative z-10">
     <div class="relative">
@@ -133,15 +133,15 @@
     <a routerLink="/invest"
       class="text-primary relative z-10 text-2xl bg-white hover:bg-gray-200 px-8 py-3 font-medium rounded-md cursor-pointer"
       (click)="closeMenu()">Invest</a>
-  </div>
-
-  <!-- Contact Button -->
-  <a routerLink="/contact-us">
-    <button class="mt-6 bg-white relative text-2xl z-10 text-[#4169E1] px-8 py-3 rounded-md font-medium  hover:bg-gray-200"
-      (click)="closeMenu()">
-      Contact Us
-    </button>
-    <!-- Mobile Logo -->
+      <!-- Contact Button -->
+      <a routerLink="/contact-us">
+        <button class=" bg-white relative text-2xl z-10 text-[#4169E1] px-8 py-3 rounded-md font-medium  hover:bg-gray-200"
+          (click)="closeMenu()">
+          Contact Us
+        </button>
+      </a>
+      <!-- Mobile Logo -->
+    </div>
     <div class="mt-10">
       <div class="flex items-center justify-center gap-2">
         <div class="flex items-center gap-2 cursor-pointer">
@@ -151,7 +151,7 @@
         </div>
       </div>
     </div>
-  </a>
+
 
 
 </div>
