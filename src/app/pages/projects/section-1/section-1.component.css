@@ -1,3 +1,67 @@
-p{
+p {
   font-weight: 600;
+}
+
+/* Animation for moving gradient */
+@keyframes moveBoxBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Box-specific animated gradient backgrounds with subtle darkening */
+
+/* Box 1: Slightly Darker Green */
+.animated-box-1 {
+  background: linear-gradient(270deg, #a7f3d0, #6ee7b7, #34d399, #10b981, #a7f3d0);
+  background-size: 400% 400%;
+  animation: moveBoxBg 7s ease infinite;
+}
+
+/* Box 2: Slightly Darker Red */
+.animated-box-2 {
+  background: linear-gradient(270deg, #ff9aa2, #ff6f91, #ff3855, #ff9aa2, #ff1744);
+  background-size: 400% 400%;
+  animation: moveBoxBg 6s ease infinite;
+}
+
+/* Box 3: Slightly Darker Blue */
+.animated-box-3 {
+  background: linear-gradient(270deg, #99bbf9, #88a6f5, #598ae4, #a3c4ff, #7a9ef1);
+  background-size: 400% 400%;
+  animation: moveBoxBg 7s ease infinite;
+}
+
+/* Box 4: Slightly Darker Yellow */
+.animated-box-4 {
+  background: linear-gradient(270deg, #f3e27b, #fff400, #ffffe0, #f9f18c, #f4e882);
+  background-size: 400% 400%;
+  animation: moveBoxBg 6s ease infinite;
+}
+
+/* Box 5: Slightly Darker Green (same as Box 1) */
+.animated-box-5 {
+  background: linear-gradient(270deg, #a7f3d0, #6ee7b7, #34d399, #10b981, #a7f3d0);
+  background-size: 400% 400%;
+  animation: moveBoxBg 7s ease infinite;
+}
+
+/* Box 6: Slightly Darker Purple */
+.animated-box-6 {
+  background: linear-gradient(270deg, #d8b4fe, #c084fc, #a855f7, #8241f1, #d8b4fe);
+  background-size: 400% 400%;
+  animation: moveBoxBg 6s ease infinite;
+}
+
+/* Box 7: Slightly Darker Red (same as Box 2) */
+.animated-box-7 {
+  background: linear-gradient(270deg, #ff9aa2, #ff6f91, #ff3855, #ff9aa2, #ff1744);
+  background-size: 400% 400%;
+  animation: moveBoxBg 7s ease infinite;
 }
