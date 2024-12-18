@@ -38,5 +38,5 @@ export class Section2Component {
   projectSvg6 = 'assets/icon/project-svg6.svg'
   projectSvg7 = 'assets/icon/project-svg7.svg'
   projectSvg8 = 'assets/icon/project-svg8.svg'
-  projectSvg9 = 'assets/icon/project-svg9.svg'
+  projectSvg9 = 'assets/icon/beach-umbrella-and-hammock.png'
 }
