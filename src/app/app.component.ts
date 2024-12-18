@@ -45,11 +45,11 @@ export class AppComponent implements OnInit {
       .pipe(
         filter((event) => event instanceof NavigationEnd),
         map(() => {
-          let child = this.activatedRoute.firstChild;
-          while (child?.firstChild) {
-            child = child.firstChild;
+          let route = this.activatedRoute;
+          while (route.firstChild) {
+            route = route.firstChild;
           }
-          return child?.snapshot.data;
+          return route.snapshot.data;
         })
       )
       .subscribe((data) => {
