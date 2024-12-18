@@ -25,7 +25,7 @@ p{
     background-position: 0% 50%;
   }
 }
-@keyframes moveDarkVioletBg {
+@keyframes moveYellowBg {
   0% {
     background-position: 0% 50%;
   }
@@ -61,10 +61,10 @@ p{
   animation: moveVioletBg 7s ease infinite;
 }
 
-.animated-dark-violet-bg {
-  background: linear-gradient(270deg, #6325e1, #954fdb, #d8b4fe, #936ad8, #9848ee);
+.animated-yellow-bg {
+  background: linear-gradient(270deg, #f3e27b, #fff400, #ffffe0, #f9f18c, #f4e882);
   background-size: 400% 400%;
-  animation: moveDarkVioletBg 7s ease infinite;
+  animation: moveYellowBg 7s ease infinite;
 }
 
 .animated-green-bg {
