@@ -1,3 +1,75 @@
 p{
   font-weight: 600;
 }
+
+@keyframes moveRedBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes moveVioletBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes moveDarkVioletBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes moveGreenBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-red-bg {
+  background: linear-gradient(270deg, #ff9aa2, #ff6f91, #ff3855, #ff9aa2, #ff1744);
+  background-size: 400% 400%;
+  animation: moveRedBg 6s ease infinite;
+}
+
+.animated-violet-bg {
+  background: linear-gradient(270deg, #d8b4fe, #c084fc, #a855f7, #8241f1, #d8b4fe);
+  background-size: 400% 400%;
+  animation: moveVioletBg 7s ease infinite;
+}
+
+.animated-dark-violet-bg {
+  background: linear-gradient(270deg, #6325e1, #954fdb, #d8b4fe, #936ad8, #9848ee);
+  background-size: 400% 400%;
+  animation: moveDarkVioletBg 7s ease infinite;
+}
+
+.animated-green-bg {
+  background: linear-gradient(270deg, #a7f3d0, #6ee7b7, #34d399, #10b981, #a7f3d0);
+  background-size: 400% 400%;
+  animation: moveGreenBg 6s ease infinite;
+}
+
