@@ -37,116 +37,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="ENVAI" />
 
-    <!-- Route-Specific Meta Tags -->
-    <script>
-      const routesMeta = {
-        "/about-us": {
-          title: "About Envai Projects | Innovating for a Greener Tomorrow",
-          description:
-            "Learn about Envai Projects' mission, vision, and dedication to building a sustainable future through innovative initiatives.",
-          url: "https://envaiprojects.com/about-us",
-        },
-        "/management": {
-          title: "About Envai Projects | Innovating for a Greener Tomorrow",
-          description:
-            "Discover Envai Projects, a pioneering platform driving innovative, sustainable, and impactful solutions.",
-          url: "https://envaiprojects.com/management",
-        },
-        "/projects": {
-          title: "Our Projects | Creating Long-Term Sustainability",
-          description:
-            "Explore Envai Projects’ portfolio of impactful ventures focused on creating long-term value and sustainability.",
-          url: "https://envaiprojects.com/projects",
-        },
-        "/tokens": {
-          title: "Envai Tokens | Powering Green Investments",
-          description:
-            "Understand the role of Envai tokens in powering sustainable investments and fostering a green economy.",
-          url: "https://envaiprojects.com/tokens",
-        },
-        "/invest": {
-          title: "Invest with Envai | Drive Sustainability",
-          description:
-            "Become part of Envai Projects’ mission by investing in sustainable solutions that create positive change.",
-          url: "https://envaiprojects.com/invest",
-        },
-        "/investment-rules": {
-          title: "Investment Rules | Principles of Sustainable Growth",
-          description:
-            "Read the guidelines and principles governing investments in Envai Projects.",
-          url: "https://envaiprojects.com/investment-rules",
-        },
-        "/contact-us": {
-          title: "Contact Envai | Partner with Us",
-          description:
-            "Connect with Envai Projects for inquiries, partnerships, or more information about our initiatives.",
-          url: "https://envaiprojects.com/contact-us",
-        },
-        "/facts-figures": {
-          title: "Facts & Figures | Envai in Numbers",
-          description:
-            "Delve into the numbers and data behind Envai Projects’ success and impact.",
-          url: "https://envaiprojects.com/facts-figures",
-        },
-        "/faqs": {
-          title: "FAQs | Learn More About Envai",
-          description:
-            "Find answers to frequently asked questions about Envai Projects and its operations.",
-          url: "https://envaiprojects.com/faqs",
-        },
-        "/privacy-policy": {
-          title: "Privacy Policy | Protecting Your Data",
-          description:
-            "Understand how Envai Projects protects your personal data and ensures privacy.",
-          url: "https://envaiprojects.com/privacy-policy",
-        },
-        "/terms": {
-          title: "Terms & Conditions | Our Commitment",
-          description:
-            "Review the terms and conditions governing the use of Envai Projects’ platform and services.",
-          url: "https://envaiprojects.com/terms",
-        },
-      };
-
-      // Dynamically set meta tags based on the current route
-      const currentPath = window.location.pathname;
-      const meta = routesMeta[currentPath] || routesMeta["/"]; // Default meta tags
-
-      document.title = meta.title;
-
-      const metaDescription = document.querySelector(
-        'meta[name="description"]'
-      );
-      if (metaDescription)
-        metaDescription.setAttribute("content", meta.description);
-
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      if (ogTitle) ogTitle.setAttribute("content", meta.title);
-
-      const ogDescription = document.querySelector(
-        'meta[property="og:description"]'
-      );
-      if (ogDescription)
-        ogDescription.setAttribute("content", meta.description);
-
-      const ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.setAttribute("content", meta.url);
-    </script>
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="ENVAI | Empower Your Investments" />
-    <meta
-      name="twitter:description"
-      content="The essence of investment is found in diversification, and within that diversification lies the true power of ENVAI."
-    />
-    <meta
-      name="twitter:image"
-      content="https://envaiprojects.com/assets/logo/LOGO-BLUE-favicon.png"
-    />
-    <meta name="twitter:site" content="@envai" />
-    <!-- Optional: Add your Twitter handle -->
-
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
@@ -158,10 +48,6 @@
       rel="stylesheet"
     />
 
-    <!-- Language and Accessibility Tags -->
-    <link rel="alternate" href="https://envaiprojects.com" hreflang="en" />
-    <link rel="alternate" href="https://envaiprojects.com/fr" hreflang="fr" />
-    <!-- Example for French (you can add more languages if applicable) -->
 
     <!-- Script for Translation Widget (GTranslate) -->
     <script>
