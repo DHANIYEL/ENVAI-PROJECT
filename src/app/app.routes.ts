@@ -12,6 +12,9 @@ import { RiskStatementComponent } from './pages/risk-statement/risk-statement.co
 import { FAQsComponent } from './pages/faqs/faqs.component';
 import { FactsFiguresComponent } from './pages/facts-figures/facts-figures.component';
 import { ManagementComponent } from './pages/management/management.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { ForgetPasswordComponent } from './pages/auth/forget-password/forget-password.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 export const routes: Routes = [
   {
@@ -118,4 +121,8 @@ export const routes: Routes = [
       description: 'Delve into the numbers and data behind Envai Projects’ success and impact.',
     },
   },
+  { path: 'login', component: LoginComponent },
+  { path: 'forgot-password', component: ForgetPasswordComponent },
+  { path: 'dashboard', component: DashboardComponent }
+
 ];
