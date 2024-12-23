@@ -16,14 +16,15 @@ import { filter, map } from 'rxjs/operators';
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    FormsModule
+    FormsModule,
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   title = 'ENVAI-PROJECT';
   showScrollToTop: boolean = false;
+  isDashboard: boolean = false; // Flag to determine if the route is a dashboard route
 
   constructor(
     private router: Router,
@@ -33,9 +34,10 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // Scroll to the top on route change
+    // Detect route changes and update `isDashboard` flag
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
+        this.isDashboard = this.router.url.startsWith('/dashboard'); // Adjust '/dashboard' to your dashboard route
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     });
@@ -80,7 +82,10 @@ export class AppComponent implements OnInit {
     // Update meta description
     if (data.description) {
       this.meta.updateTag({ name: 'description', content: data.description });
-      this.meta.updateTag({ property: 'og:description', content: data.description });
+      this.meta.updateTag({
+        property: 'og:description',
+        content: data.description,
+      });
     }
   }
 }

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { NgIf, NgFor } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [RouterModule, NgIf, NgFor, FormsModule],
+  imports: [RouterModule, NgIf, NgIf, FormsModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
@@ -15,6 +15,8 @@ export class FooterComponent {
 
   searchQuery = '';
   suggestionsList: { name: string, path: string }[] = [];
+
+
 
   private routes = [
     { name: 'Home', path: '/' },

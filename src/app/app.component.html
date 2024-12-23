@@ -1,31 +1,31 @@
-<!-- ============== Pages =============== -->
 <div class="bg-light overflow-x-hidden">
-  <app-header></app-header>
-  <!-- <app-investment></app-investment> -->
-  <!-- <app-tokens></app-tokens> -->
+  <!-- Conditionally include the header -->
+  <app-header *ngIf="!isDashboard"></app-header>
+
   <!-- Scroll-to-top button -->
   <button
-  *ngIf="showScrollToTop"
-  class="fixed bottom-5  bg-blue-600 left-5 text-white p-3 rounded-full shadow-lg hover:drop-shadow-2xl text-lg hover:bg-blue-700 transition-all duration-300 ease-in-out transform hover:-translate-y-3 z-[100]"
-  (click)="scrollToTop()"
->
-<svg
-  class="w-6 h-6"
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  stroke="currentColor"
->
-  <path
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-width="2"
-    d="M19 15l-7-7-7 7"
-  />
-</svg>
+    *ngIf="showScrollToTop"
+    class="fixed bottom-5 bg-blue-600 left-5 text-white p-3 rounded-full shadow-lg hover:drop-shadow-2xl text-lg hover:bg-blue-700 transition-all duration-300 ease-in-out transform hover:-translate-y-3 z-[100]"
+    (click)="scrollToTop()"
+  >
+    <svg
+      class="w-6 h-6"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 15l-7-7-7 7"
+      />
+    </svg>
+  </button>
 
-</button>
-
-
+  <!-- Router outlet for page content -->
   <router-outlet></router-outlet>
-  <app-footer></app-footer>
+
+  <!-- Conditionally include the footer -->
+  <app-footer *ngIf="!isDashboard"></app-footer>
 </div>
