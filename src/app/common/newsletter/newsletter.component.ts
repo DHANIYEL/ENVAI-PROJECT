@@ -12,7 +12,7 @@ import emailjs from '@emailjs/browser';
   styleUrls: ['./newsletter.component.css'],
 })
 export class NewsletterComponent {
-  newsLetterImg = 'assets/home/newsletter-img.png';
+  newsLetterImg = 'assets/home/subscribe-banner.jpg';
   xIcon = 'assets/icon/x.svg';
   facebookIcon = 'assets/icon/facebook.svg';
   instagramIcon = 'assets/icon/instagram.svg';
