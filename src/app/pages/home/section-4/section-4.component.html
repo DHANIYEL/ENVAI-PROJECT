@@ -1,15 +1,9 @@
 <section class="max-w-7xl mx-auto px-4 py-6">
   <!-- Header -->
   <div class="text-center mb-4">
-    <div
-      class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-md mb-6"
-    >
+    <div class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-md mb-6">
       <span class="flex items-center gap-2">
-        <img
-          [src]="statementImg"
-          alt="project icon"
-          class="rounded-lg shadow-lg max-w-md w-full grayscale"
-        />
+        <img [src]="statementImg" alt="project icon" class="rounded-lg shadow-lg max-w-md w-full grayscale" />
         Projects
       </span>
     </div>
@@ -87,74 +81,53 @@
 
   <div class="relative w-full overflow-hidden py-5">
     <!-- Main carousel container -->
-    <div class="flex transition-transform duration-300 ease-in-out" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
+    <div class="flex transition-transform duration-300 ease-in-out"
+      [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
       <!-- First slide -->
       <div class="w-full flex-none grid grid-cols-1 md:grid-cols-4 gap-8">
-        <app-project-card
-          imageUrl="assets/projects/project-img1-1.png"
-          name="Office Buildings"
+        <app-project-card imageUrl="assets/projects/project-img1-1.png" name="Office Buildings"
           description="Modern energy-efficient offices for business demand.">
         </app-project-card>
-        <app-project-card
-          imageUrl="assets/projects/project-img2-1.png"
-          name="Shopping Malls"
+        <app-project-card imageUrl="assets/projects/project-img2-1.png" name="Shopping Malls"
           description="Dynamic spaces featuring international and local brands.">
         </app-project-card>
-        <app-project-card
-          imageUrl="assets/projects/project-img3-1.png"
-          name="Hotels and Resorts"
+        <app-project-card imageUrl="assets/projects/project-img3-1.png" name="Hotels and Resorts"
           description="Luxury destinations in popular tourist hotspots.">
         </app-project-card>
-        <app-project-card
-          imageUrl="assets/projects/project-img4-1.png"
-          name="Industrial Parks"
+        <app-project-card imageUrl="assets/projects/project-img4-1.png" name="Industrial Parks"
           description="Strategic hubs supporting manufacturing and logistics.">
         </app-project-card>
       </div>
 
       <!-- Second slide -->
       <div class="w-full flex-none grid grid-cols-1 md:grid-cols-4 gap-8">
-        <app-project-card
-          imageUrl="assets/projects/project-img5-1.png"
-          name="Apartments"
+        <app-project-card imageUrl="assets/projects/project-img5-1.png" name="Apartments"
           description="Stable rental income with appreciation and tax benefits.">
         </app-project-card>
-        <app-project-card
-          imageUrl="assets/projects/project-img6-1.png"
-          name="Mixed-use"
+        <app-project-card imageUrl="assets/projects/project-img6-1.png" name="Mixed-use"
           description="Spaces combining residential, commercial, and retail.">
         </app-project-card>
-        <app-project-card
-          imageUrl="assets/projects/project-img7-1.png"
-          name="Airports"
+        <app-project-card imageUrl="assets/projects/project-img7-1.png" name="Airports"
           description="Renovation planned for Bangui M'Poko International Airport.">
         </app-project-card>
-        <app-project-card
-          imageUrl="assets/projects/project-img8-1.png"
-          name="Data Centers"
+        <app-project-card imageUrl="assets/projects/project-img8-1.png" name="Data Centers"
           description="High-demand hubs powering the digital economy.">
         </app-project-card>
       </div>
 
       <!-- New Slide: Add a third slide -->
       <div class="w-full flex-none grid grid-cols-1 md:grid-cols-4 gap-8">
-        <app-project-card
-          imageUrl="assets/projects/project-img9-1.png"
-          name="New Project"
-          description="Description of the new project.">
+        <app-project-card imageUrl="assets/projects/project-img9-1.png" name="Resort Properties"
+          description="All-inclusive retreats offering unique guest experiences.">
         </app-project-card>
       </div>
     </div>
 
     <!-- Dot indicators -->
     <div class="flex justify-center gap-2 mt-6">
-      <button
-        *ngFor="let _ of [0, 1, 2]; let i = index"
-        (click)="currentSlide = i"
-        class="w-3 h-3 rounded-full transition-colors duration-200"
-        [class.bg-primary]="currentSlide === i"
-        [class.bg-gray-300]="currentSlide !== i"
-        [attr.aria-label]="'Go to slide ' + (i + 1)">
+      <button *ngFor="let _ of [0, 1, 2]; let i = index" (click)="currentSlide = i"
+        class="w-3 h-3 rounded-full transition-colors duration-200" [class.bg-primary]="currentSlide === i"
+        [class.bg-gray-300]="currentSlide !== i" [attr.aria-label]="'Go to slide ' + (i + 1)">
       </button>
     </div>
   </div>
@@ -162,9 +135,7 @@
   <!-- View All Button -->
   <div class="flex justify-center my-10">
     <a routerLink="/projects">
-      <button
-        class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors"
-      >
+      <button class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors">
         View All
       </button>
     </a>
