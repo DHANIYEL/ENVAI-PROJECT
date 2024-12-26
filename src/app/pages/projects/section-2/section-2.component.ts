@@ -1,42 +1,59 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ApiService } from '../../../services/api.service';
+
+interface Project {
+  title: string;
+  smallDescription: string;
+  detailedDescription: string;
+  projectUrls: string;
+  iconUrls: string;
+  id: string;
+  amount: number;
+}
 
 @Component({
   selector: 'app-section-2',
   standalone: true,
-  imports: [RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './section-2.component.html',
-  styleUrl: './section-2.component.css'
+  styleUrls: ['./section-2.component.css'],
 })
-export class Section2Component {
-
+export class Section2Component implements OnInit {
   buildingIcon = 'assets/icon/building.svg'
 
+  projects: Project[] = [];
+  loading = false;
+  errorMessage: string = '';
   rightArrowIcon = 'assets/icon/right-arrow.svg';
 
+  constructor(private apiService: ApiService) {}
 
-  projectImg1 = 'assets/projects/project-img1-1.png'
-  projectImg2 = 'assets/projects/project-img2-1.png'
-  projectImg3 = 'assets/projects/project-img3-1.png'
-  projectImg4 = 'assets/projects/project-img4-1.png'
-  projectImg5 = 'assets/projects/project-img5-1.png'
-  projectImg6 = 'assets/projects/project-img6-1.png'
-  projectImg7 = 'assets/projects/project-img7-1.png'
-  projectImg8 = 'assets/projects/project-img8-1.png'
-  projectImg9 = 'assets/projects/project-img9-1.png'
+  ngOnInit() {
+    this.getAllProjects();
+  }
 
-  patternSvg1 = 'assets/svg/pattern1.svg'
-  patternSvg2 = 'assets/svg/pattern2.svg'
-  patternSvg3 = 'assets/svg/pattern3.svg'
-  patternSvg4 = 'assets/svg/pattern4.svg'
-
-  projectSvg1 = 'assets/icon/project-svg1.svg'
-  projectSvg2 = 'assets/icon/project-svg2.svg'
-  projectSvg3 = 'assets/icon/project-svg3.svg'
-  projectSvg4 = 'assets/icon/project-svg4.svg'
-  projectSvg5 = 'assets/icon/project-svg5.svg'
-  projectSvg6 = 'assets/icon/project-svg6.svg'
-  projectSvg7 = 'assets/icon/project-svg7.svg'
-  projectSvg8 = 'assets/icon/project-svg8.svg'
-  projectSvg9 = 'assets/icon/beach-umbrella-and-hammock.png'
+  getAllProjects(): void {
+    this.loading = true;
+    this.apiService.getAllProjects().subscribe({
+      next: (response) => {
+        this.projects = response.map((project: any) => ({
+          title: project.strTitle,
+          smallDescription: project.short_Description,
+          detailedDescription: project.long_Description,
+          projectUrls: project.strProjectUrls,
+          iconUrls: project.strIconUrls,
+          id: project.fkProjectId,
+          amount: project.amount
+        }));
+        this.loading = false;
+      },
+      error: (error) => {
+        console.error('Failed to fetch projects:', error);
+        this.errorMessage = 'Could not load projects. Please try again later.';
+        this.loading = false;
+      }
+    });
+  }
 }

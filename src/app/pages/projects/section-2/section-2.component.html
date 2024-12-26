@@ -16,300 +16,53 @@
 
     <!-- Project Types -->
     <div class="space-y-24">
-      <!-- Office Buildings -->
-      <div class="grid grid-cols-1 relative md:grid-cols-2 gap-8 items-center">
-        <div class="space-y-6 z-50">
-          <div class="flex items-start gap-3 flex-col z-50">
-            <div class="p-2 bg-[#9FF485] rounded-lg">
-              <img [src]="projectSvg1" alt="project icons 1" class="w-6 h-6" />
-            </div>
-            <h3 class="text-2xl font-bold">1. Office Buildings</h3>
-          </div>
-          <p class="text-gray-600 max-w-lg">
-            Modern, energy-efficient office buildings are being developed to
-            cater to the growing demand from local and international businesses.
-          </p>
-
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
-        </div>
-        <div class="relative h-[400px] max-sm:h-fit overflow-hidden">
-          <img
-            [src]="projectImg1"
-            alt="Modern office building"
-            class="w-full h-full object-contain shadow-2xl "
-          />
-        </div>
+      <!-- Loading state -->
+      <div *ngIf="loading" class="flex justify-center items-center py-10">
+        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
       </div>
 
-      <!-- Shopping Malls -->
-      <div
-        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
-      >
-        <div
-          class="relative h-[400px] max-sm:h-fit  overflow-hidden order-2 md:order-1"
-        >
-          <img
-            [src]="projectImg2"
-            alt="Modern shopping mall at night"
-            class="w-full h-full shadow-2xl object-contain"
-          />
-        </div>
-        <div class="space-y-6 order-1 md:order-2">
-          <div class="flex items-start flex-col gap-3">
-            <div class="p-2 bg-[#F4232380] rounded-lg">
-              <img [src]="projectSvg2" alt="project icons 2" class="w-6 h-6" />
-            </div>
-            <h3 class="text-2xl font-bold">2. Shopping Malls</h3>
-          </div>
-          <p class="text-gray-600 max-w-lg">
-            Large-scale shopping malls with a mix of international and local
-            brands are being built in major cities and tourist destinations.
-          </p>
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
-        </div>
+      <!-- Error message -->
+      <div *ngIf="errorMessage" class="text-red-500 text-center py-4">
+        {{ errorMessage }}
       </div>
 
-      <div
-        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
-      >
-        <div class="space-y-6">
-          <div class="flex items-start gap-3 flex-col">
-            <div class="p-2 bg-[#FFD70080] rounded-lg">
-              <img [src]="projectSvg3" alt="project icons 3" class="w-6 h-6" />
-            </div>
-            <h2 class="text-2xl font-bold">3. Hotels and Resorts</h2>
-          </div>
-          <p class="text-gray-600 max-w-lg">
-            Luxury hotels and resorts are being constructed in popular tourist
-            destinations
-          </p>
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
-        </div>
-        <div class="relative h-[400px] max-sm:h-fit  overflow-hidden">
-          <img
-            [src]="projectImg3"
-            alt="Modern office building"
-            class="w-full h-full object-contain shadow-2xl"
-          />
-        </div>
-      </div>
+      <!-- Projects Grid -->
+      <ng-container *ngIf="!loading && !errorMessage">
+        <div *ngFor="let project of projects; let i = index"
+             class="grid grid-cols-1 relative md:grid-cols-2 gap-8 items-center">
 
-      <!-- Shopping Malls -->
-      <div
-        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
-      >
-        <div
-          class="relative h-[400px] max-sm:h-fit  overflow-hidden  order-2 md:order-1"
-        >
-          <img
-            [src]="projectImg4"
-            alt="Modern shopping mall at night"
-            class="w-full h-full object-contain shadow-2xl"
-          />
-        </div>
-        <div class="space-y-6 order-1 md:order-2">
-          <div class="flex items-start flex-col gap-3">
-            <div class="p-2 bg-[#F4232380] rounded-lg">
-              <img [src]="projectSvg4" alt="project icons 4" class="w-6 h-6" />
+          <!-- Content Section -->
+          <div class="space-y-6" [class.order-1]="i % 2 === 0" [class.order-2]="i % 2 !== 0">
+            <div class="flex items-start gap-3 flex-col z-50">
+              <div class="p-2" [ngClass]="i % 2 === 0 ? 'bg-[#9FF485]' : 'bg-[#F4232380]'" class="rounded-lg px-3 py-3">
+                <img [src]="project.iconUrls" [alt]="'project icon ' + (i + 1)" class="w-6 h-6" />
+              </div>
+              <h3 class="text-2xl font-bold">{{ project.title }}</h3>
             </div>
-            <h2 class="text-2xl font-bold">
-              4. Industrial Parks and Warehouses
-            </h2>
+            <p class="text-gray-600 max-w-lg">
+              {{ project.detailedDescription }}
+            </p>
+            <button
+              [routerLink]="'/invest'"
+              class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+            >
+              <img [src]="rightArrowIcon" alt="right arrow icon" />
+              <span>Invest</span>
+            </button>
           </div>
-          <p class="text-gray-600 max-w-lg">
-            Strategic industrial parks and warehouses are being developed to
-            support the growing manufacturing and logistics sectors.
-          </p>
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
-        </div>
-      </div>
 
-      <div
-        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
-      >
-        <div class="space-y-6">
-          <div class="flex items-start gap-3 flex-col">
-            <div class="p-2 bg-[#9FF485] rounded-lg">
-              <img [src]="projectSvg5" alt="project icons 5" class="w-6 h-6" />
-            </div>
-            <h2 class="text-2xl font-bold">5. Apartments</h2>
+          <!-- Image Section -->
+          <div class="relative h-[400px] max-sm:h-fit overflow-hidden"
+               [class.order-2]="i % 2 === 0"
+               [class.order-1]="i % 2 !== 0">
+            <img
+              [src]="project.projectUrls"
+              [alt]="project.title"
+              class="w-full h-full object-contain shadow-2xl"
+            />
           </div>
-          <p class="text-gray-600 max-w-lg">
-            Investing in apartment complexes can be a lucrative venture,
-            offering stable rental income, potential for appreciation, and tax
-            benefits.
-          </p>
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
         </div>
-        <div class="relative h-[400px] max-sm:h-fit  overflow-hidden">
-          <img
-            [src]="projectImg5"
-            alt="Modern office building"
-            class="w-full h-full object-contain shadow-2xl"
-          />
-        </div>
-      </div>
-
-      <!-- Shopping Malls -->
-      <div
-        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
-      >
-        <div
-          class="relative h-[400px] max-sm:h-fit overflow-hidden order-2 md:order-1"
-        >
-          <img
-            [src]="projectImg6"
-            alt="Modern shopping mall at night"
-            class="shadow-2xl w-full h-full object-contain"
-          />
-        </div>
-        <div class="space-y-6 order-1 md:order-2">
-          <div class="flex items-start flex-col gap-3">
-            <div class="p-2 bg-[#F4232380] rounded-lg">
-              <img [src]="projectSvg6" alt="project icons 6" class="w-6 h-6" />
-            </div>
-            <h2 class="text-2xl font-bold">6. Mixed-use</h2>
-          </div>
-          <p class="text-gray-600 max-w-lg">
-            Developments combine residential, commercial, and retail components
-            and offer diverse amenities and services
-          </p>
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
-        </div>
-      </div>
-      <div
-        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
-      >
-        <div class="space-y-6">
-          <div class="flex items-start gap-3 flex-col">
-            <div class="p-2 bg-[#9FF485] rounded-lg">
-              <img [src]="projectSvg7" alt="project icons 7" class="w-6 h-6" />
-            </div>
-            <h2 class="text-2xl font-bold">7. Airports</h2>
-          </div>
-          <p class="text-gray-600 max-w-lg">
-            Bangui M'Poko International Airport is located seven kilometers
-            northwest of Bangui, the capital of the Central African Republic. It
-            is slated for renovation.
-          </p>
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
-        </div>
-        <div class="relative h-[400px] max-sm:h-fit  overflow-hidden">
-          <img
-            [src]="projectImg7"
-            alt="Modern office building"
-            class="w-full h-full object-contain shadow-2xl"
-          />
-        </div>
-      </div>
-
-      <!-- Shopping Malls -->
-      <div
-        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
-      >
-        <div
-          class="relative h-[400px] max-sm:h-fit  overflow-hidden order-2 md:order-1"
-        >
-          <img
-            [src]="projectImg8"
-            alt="Modern shopping mall at night"
-            class="w-full h-full object-contain shadow-2xl"
-          />
-        </div>
-        <div class="space-y-6 order-1 md:order-2">
-          <div class="flex items-start flex-col gap-3">
-            <div class="p-2 bg-[#F4232380] rounded-lg">
-              <img [src]="projectSvg8" alt="project icons 8" class="w-6 h-6" />
-            </div>
-            <h2 class="text-2xl font-bold">8. Data Centers</h2>
-          </div>
-          <p class="text-gray-600 max-w-lg">
-            Investing in data centers offers several benefits, including
-            consistent rental income due to the high demand for data storage and
-            processing power, exposure to the rapidly growing digital economy,
-            and the potential for diversification in an investment portfolio.
-          </p>
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
-        </div>
-      </div>
-      <div
-        class="grid grid-cols-1 z-50 relative md:grid-cols-2 gap-8 items-center"
-      >
-        <div class="space-y-6">
-          <div class="flex items-start gap-3 flex-col">
-            <div class="p-2 bg-[#9FF485] rounded-lg">
-              <img [src]="projectSvg9" alt="project icons 9" class="w-6 h-6" />
-            </div>
-            <h2 class="text-2xl font-bold">9. Resort Properties</h2>
-          </div>
-          <p class="text-gray-600 max-w-lg">
-            These include all-inclusive resorts, boutique hotels, wellness
-            retreats, golf resorts, and historical and cultural resorts.
-          </p>
-          <button
-            [routerLink]="'/invest'"
-            class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-          >
-            <img [src]="rightArrowIcon" alt="right arrow icon" />
-            <span>Invest</span>
-          </button>
-        </div>
-        <div class="relative h-[400px] max-sm:h-fit  overflow-hidden">
-          <img
-            [src]="projectImg9"
-            alt="Modern office building"
-            class="w-full h-full object-contain shadow-2xl"
-          />
-        </div>
-      </div>
+      </ng-container>
     </div>
   </div>
 </section>
