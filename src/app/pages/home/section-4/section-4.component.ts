@@ -64,9 +64,21 @@ export class Section4Component implements OnInit {
     return Math.ceil(this.projects.length / this.itemsPerSlide);
   }
 
-  // Get projects for a specific slide
+  // Get projects for a specific slide with the logic for handling the last slide
   getProjectsForSlide(slideIndex: number): Project[] {
     const startIndex = slideIndex * this.itemsPerSlide;
-    return this.projects.slice(startIndex, startIndex + this.itemsPerSlide);
+    const endIndex = startIndex + this.itemsPerSlide;
+    let slideProjects = this.projects.slice(startIndex, endIndex);
+
+    // If it's the last slide and has fewer than 4 cards, redistribute cards from previous slides
+    if (slideIndex === this.numberOfSlides - 1 && slideProjects.length < this.itemsPerSlide) {
+      const remainingCards = this.itemsPerSlide - slideProjects.length;
+      const previousSlideProjects = this.projects.slice(0, remainingCards);
+
+      // Add missing cards from previous slides
+      slideProjects = [...previousSlideProjects, ...slideProjects];
+    }
+
+    return slideProjects;
   }
 }
