@@ -53,28 +53,24 @@ export class ApiService {
   }
 
   // Get all projects
-  getAllProjects(): Observable<Project[]> {
-    try {
-      const headers = this.getAuthHeaders();
-      const payload = {
-        token: localStorage.getItem('token')
-      };
+  getAllProjects(): Observable<any> {
+    const strLoginUserId = '6694bc261a50999f1740e118'; // Use the actual login user ID here
 
-      return this.http.post<ApiResponse<Project[]>>(
-        `${this.baseUrl}/projects/get_all_projects`,
-        payload,
-        { headers }
-      ).pipe(
-        map(response => {
-          if (!response.success) {
-            throw new Error(response.message || 'Failed to fetch projects');
-          }
-          return response.data;
-        }),
-        catchError(this.handleError)
-      );
-    } catch (error) {
-      return throwError(() => error);
-    }
+    // Request body with strLoginUserId
+    const body = {
+      strLoginUserId: strLoginUserId,
+    };
+
+    return this.http.post<any>(`${this.baseUrl}/projects/get_all_projects`, body).pipe(
+      map(response => {
+        if (!response.success) {
+          throw new Error(response.message || 'Failed to fetch projects');
+        }
+        return response.data;
+      }),
+      catchError(this.handleError)
+    );
   }
+
+
 }

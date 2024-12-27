@@ -36,6 +36,8 @@ export class Section2Component implements OnInit {
 
   getAllProjects(): void {
     this.loading = true;
+
+    // Call the API service method to fetch projects
     this.apiService.getAllProjects().subscribe({
       next: (response) => {
         this.projects = response.map((project: any) => ({
@@ -56,4 +58,6 @@ export class Section2Component implements OnInit {
       }
     });
   }
+
+
 }
