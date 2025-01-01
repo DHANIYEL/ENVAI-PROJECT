@@ -1,12 +1,12 @@
 <section class="max-w-7xl mx-auto px-4 py-6">
   <!-- Header -->
   <div class="text-center mb-4">
-    <div class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-md mb-6">
+    <!-- <div class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-md mb-6">
       <span class="flex items-center gap-2">
         <img [src]="statementImg" alt="project icon" class="rounded-lg shadow-lg max-w-md w-full grayscale" />
         Projects
       </span>
-    </div>
+    </div> -->
     <h2 class="text-5xl font-bold mb-6">Invest in our projects below</h2>
     <p class="max-w-3xl mx-auto text-gray-600">
       Here, you can browse and select from over 100 short-term, secure and
@@ -146,9 +146,7 @@
       <div *ngFor="let slideIndex of [].constructor(numberOfSlides); let i = index"
         class="w-full flex-none grid grid-cols-1 md:grid-cols-4 gap-8">
         <ng-container *ngFor="let project of getProjectsForSlide(i)">
-          <app-project-card
-            [imageUrl]="project.projectUrls"
-            [name]="project.title"
+          <app-project-card [imageUrl]="project.projectUrls" [name]="project.title"
             [description]="project.smallDescription">
           </app-project-card>
         </ng-container>
@@ -157,12 +155,9 @@
 
     <!-- Dot indicators -->
     <div class="flex justify-center gap-2 mt-6">
-      <button *ngFor="let _ of [].constructor(numberOfSlides); let i = index"
-        (click)="currentSlide = i"
-        class="w-3 h-3 rounded-full transition-colors duration-200"
-        [class.bg-primary]="currentSlide === i"
-        [class.bg-gray-300]="currentSlide !== i"
-        [attr.aria-label]="'Go to slide ' + (i + 1)">
+      <button *ngFor="let _ of [].constructor(numberOfSlides); let i = index" (click)="currentSlide = i"
+        class="w-3 h-3 rounded-full transition-colors duration-200" [class.bg-primary]="currentSlide === i"
+        [class.bg-gray-300]="currentSlide !== i" [attr.aria-label]="'Go to slide ' + (i + 1)">
       </button>
     </div>
   </div>

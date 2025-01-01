@@ -2,12 +2,12 @@
   <div class="max-w-7xl mx-auto px-4 py-16 relative">
     <!-- Header -->
     <div class="text-center mb-16 flex justify-center items-center flex-col">
-      <div
+      <!-- <div
         class="flex bg-gray-50 items-center px-4 w-fit justify-center py-2 my-4 rounded-full shadow-md z-50"
       >
         <img [src]="buildingIcon" alt="location Icon" class="w-5 h-5 mr-2" />
         <p class="text-gray-800">Projects</p>
-      </div>
+      </div> -->
       <h2 class="text-4xl font-bold mb-4">Types of Projects</h2>
       <p class="text-gray-600 max-w-md">
         ENVAI offers a variety of project types in real estate and buildings
@@ -29,7 +29,7 @@
       <!-- Projects Grid -->
       <ng-container *ngIf="!loading && !errorMessage">
         <div *ngFor="let project of projects; let i = index"
-             class="grid grid-cols-1 relative md:grid-cols-2 gap-8 items-center">
+          class="grid grid-cols-1 relative md:grid-cols-2 gap-8 items-center">
 
           <!-- Content Section -->
           <div class="space-y-6" [class.order-1]="i % 2 === 0" [class.order-2]="i % 2 !== 0">
@@ -42,24 +42,17 @@
             <p class="text-gray-600 max-w-lg">
               {{ project.detailedDescription }}
             </p>
-            <button
-              [routerLink]="'/invest'"
-              class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
-            >
+            <button [routerLink]="'/invest'"
+              class="bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
               <img [src]="rightArrowIcon" alt="right arrow icon" />
               <span>Invest</span>
             </button>
           </div>
 
           <!-- Image Section -->
-          <div class="relative h-[400px] max-sm:h-fit overflow-hidden"
-               [class.order-2]="i % 2 === 0"
-               [class.order-1]="i % 2 !== 0">
-            <img
-              [src]="project.projectUrls"
-              [alt]="project.title"
-              class="w-full h-full object-contain shadow-2xl"
-            />
+          <div class="relative h-[400px] max-sm:h-fit overflow-hidden" [class.order-2]="i % 2 === 0"
+            [class.order-1]="i % 2 !== 0">
+            <img [src]="project.projectUrls" [alt]="project.title" class="w-full h-full object-contain shadow-2xl" />
           </div>
         </div>
       </ng-container>
